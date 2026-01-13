@@ -297,5 +297,261 @@ describe(DirectivesFilterer, () => {
 				unusedDirectives: [],
 			});
 		});
+
+		it("marks disable-lines-begin as used when its range suppresses a report", () => {
+			const filterer = new DirectivesFilterer();
+
+			const beginDirective = {
+				range: {
+					begin: {
+						column: 0,
+						line: 0,
+						raw: 0,
+					},
+					end: {
+						column: 0,
+						line: 0,
+						raw: 0,
+					},
+				},
+				selections: ["example"],
+				type: "disable-lines-begin" as const,
+			};
+
+			filterer.add([beginDirective]);
+
+			// Report on line 1 should be suppressed (begin is on line 0, range starts at line 1)
+			const reports = [createReport(1, "example")];
+
+			const actual = filterer.filter(reports);
+
+			expect(actual).toEqual({
+				reports: [],
+				unusedDirectives: [],
+			});
+		});
+
+		it("marks disable-lines-end as used when its range suppresses a report", () => {
+			const filterer = new DirectivesFilterer();
+
+			const beginDirective = {
+				range: {
+					begin: {
+						column: 0,
+						line: 0,
+						raw: 0,
+					},
+					end: {
+						column: 0,
+						line: 0,
+						raw: 0,
+					},
+				},
+				selections: ["example"],
+				type: "disable-lines-begin" as const,
+			};
+
+			const endDirective = {
+				range: {
+					begin: {
+						column: 0,
+						line: 5,
+						raw: 5,
+					},
+					end: {
+						column: 0,
+						line: 5,
+						raw: 5,
+					},
+				},
+				selections: ["example"],
+				type: "disable-lines-end" as const,
+			};
+
+			filterer.add([beginDirective, endDirective]);
+
+			// Report on line 3 should be suppressed (range is lines 1-5)
+			const reports = [createReport(3, "example")];
+
+			const actual = filterer.filter(reports);
+
+			expect(actual).toEqual({
+				reports: [],
+				unusedDirectives: [],
+			});
+		});
+
+		it("marks both begin and end as unused when block doesn't suppress any reports", () => {
+			const filterer = new DirectivesFilterer();
+
+			const beginDirective = {
+				range: {
+					begin: {
+						column: 0,
+						line: 0,
+						raw: 0,
+					},
+					end: {
+						column: 0,
+						line: 0,
+						raw: 0,
+					},
+				},
+				selections: ["other-rule"],
+				type: "disable-lines-begin" as const,
+			};
+
+			const endDirective = {
+				range: {
+					begin: {
+						column: 0,
+						line: 5,
+						raw: 5,
+					},
+					end: {
+						column: 0,
+						line: 5,
+						raw: 5,
+					},
+				},
+				selections: ["other-rule"],
+				type: "disable-lines-end" as const,
+			};
+
+			filterer.add([beginDirective, endDirective]);
+
+			// Report doesn't match the directive's selection
+			const reports = [createReport(3, "example")];
+
+			const actual = filterer.filter(reports);
+
+			expect(actual).toEqual({
+				reports,
+				unusedDirectives: [beginDirective, endDirective],
+			});
+		});
+
+		it("marks unclosed disable-lines-begin as used when it suppresses a report", () => {
+			const filterer = new DirectivesFilterer();
+
+			const beginDirective = {
+				range: {
+					begin: {
+						column: 0,
+						line: 0,
+						raw: 0,
+					},
+					end: {
+						column: 0,
+						line: 0,
+						raw: 0,
+					},
+				},
+				selections: ["example"],
+				type: "disable-lines-begin" as const,
+			};
+
+			filterer.add([beginDirective]);
+
+			// Report on line 100 should still be suppressed (unclosed range goes to Infinity)
+			const reports = [createReport(100, "example")];
+
+			const actual = filterer.filter(reports);
+
+			expect(actual).toEqual({
+				reports: [],
+				unusedDirectives: [],
+			});
+		});
+
+		it("only marks directives as used when their selections match the suppressed report", () => {
+			const filterer = new DirectivesFilterer();
+
+			const usedBeginDirective = {
+				range: {
+					begin: {
+						column: 0,
+						line: 0,
+						raw: 0,
+					},
+					end: {
+						column: 0,
+						line: 0,
+						raw: 0,
+					},
+				},
+				selections: ["example"],
+				type: "disable-lines-begin" as const,
+			};
+
+			const usedEndDirective = {
+				range: {
+					begin: {
+						column: 0,
+						line: 5,
+						raw: 5,
+					},
+					end: {
+						column: 0,
+						line: 5,
+						raw: 5,
+					},
+				},
+				selections: ["example"],
+				type: "disable-lines-end" as const,
+			};
+
+			// Different block that doesn't match any reports
+			const unusedBeginDirective = {
+				range: {
+					begin: {
+						column: 0,
+						line: 10,
+						raw: 10,
+					},
+					end: {
+						column: 0,
+						line: 10,
+						raw: 10,
+					},
+				},
+				selections: ["other-rule"],
+				type: "disable-lines-begin" as const,
+			};
+
+			const unusedEndDirective = {
+				range: {
+					begin: {
+						column: 0,
+						line: 15,
+						raw: 15,
+					},
+					end: {
+						column: 0,
+						line: 15,
+						raw: 15,
+					},
+				},
+				selections: ["other-rule"],
+				type: "disable-lines-end" as const,
+			};
+
+			filterer.add([
+				usedBeginDirective,
+				usedEndDirective,
+				unusedBeginDirective,
+				unusedEndDirective,
+			]);
+
+			// Only "example" report at line 3 (in first block), no reports for "other-rule"
+			const reports = [createReport(3, "example")];
+
+			const actual = filterer.filter(reports);
+
+			expect(actual).toEqual({
+				reports: [],
+				unusedDirectives: [unusedBeginDirective, unusedEndDirective],
+			});
+		});
 	});
 });
