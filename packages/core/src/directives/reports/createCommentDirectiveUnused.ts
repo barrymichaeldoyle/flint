@@ -12,7 +12,7 @@ export function createCommentDirectiveUnused(directive: CommentDirective) {
 			id: "commentDirectiveUnused",
 		},
 		message: {
-			primary: `The flint-${directive.type} comment directive with selection(s) ${selectionsText} did not match any reports.`,
+			primary: `The flint-${directive.type} comment directive selecting ${selectionsText} did not match any reports.`,
 			secondary: [
 				"This directive may be unnecessary if it's not suppressing any linting errors.",
 				"Consider removing it if it's no longer needed.",
