@@ -18,6 +18,7 @@ import arrayFlatMapMethods from "./rules/arrayFlatMapMethods.ts";
 import arrayFlatMethods from "./rules/arrayFlatMethods.ts";
 import arrayFlatUnnecessaryDepths from "./rules/arrayFlatUnnecessaryDepths.ts";
 import arrayIncludes from "./rules/arrayIncludes.ts";
+import arrayIncludesMethods from "./rules/arrayIncludesMethods.ts";
 import arrayMapIdentities from "./rules/arrayMapIdentities.ts";
 import arrayMutableReverses from "./rules/arrayMutableReverses.ts";
 import arrayMutableSorts from "./rules/arrayMutableSorts.ts";
@@ -116,6 +117,7 @@ export const ts = createPlugin({
 		anyCalls,
 		anyMemberAccess,
 		anyReturns,
+		arrayIncludesMethods,
 		argumentsRule,
 		arrayCallbackReturns,
 		arrayConstructors,
