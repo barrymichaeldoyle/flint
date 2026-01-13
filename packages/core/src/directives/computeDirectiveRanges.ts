@@ -51,7 +51,7 @@ export function computeDirectiveRanges(
 		}
 	}
 
-	const directivesSorted = directives.sort(
+	const directivesSorted = directives.toSorted(
 		(a, b) => a.range.begin.raw - b.range.begin.raw,
 	);
 
