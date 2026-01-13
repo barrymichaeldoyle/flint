@@ -7546,7 +7546,8 @@
 		"flint": {
 			"name": "arrayLoops",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
