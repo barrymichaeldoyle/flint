@@ -54,6 +54,7 @@ import consecutiveNonNullAssertions from "./rules/consecutiveNonNullAssertions.t
 import consoleCalls from "./rules/consoleCalls.ts";
 import constantAssignments from "./rules/constantAssignments.ts";
 import constructorReturns from "./rules/constructorReturns.ts";
+import constructorSupers from "./rules/constructorSupers.ts";
 import dateConstructorClones from "./rules/dateConstructorClones.ts";
 import dateNowTimestamps from "./rules/dateNowTimestamps.ts";
 import debuggerStatements from "./rules/debuggerStatements.ts";
@@ -183,6 +184,7 @@ export const ts = createPlugin({
 		consoleCalls,
 		constantAssignments,
 		constructorReturns,
+		constructorSupers,
 		dateConstructorClones,
 		dateNowTimestamps,
 		debuggerStatements,
