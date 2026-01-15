@@ -75,6 +75,7 @@ import emptyModuleAttributes from "./rules/emptyModuleAttributes.ts";
 import emptyStaticBlocks from "./rules/emptyStaticBlocks.ts";
 import enumInitializers from "./rules/enumInitializers.ts";
 import enumMemberLiterals from "./rules/enumMemberLiterals.ts";
+import enumValueConsistency from "./rules/enumValueConsistency.ts";
 import equalityOperatorNegations from "./rules/equalityOperatorNegations.ts";
 import evolvingVariableTypes from "./rules/evolvingVariableTypes.ts";
 import exceptionAssignments from "./rules/exceptionAssignments.ts";
@@ -213,6 +214,7 @@ export const ts = createPlugin({
 		emptyStaticBlocks,
 		enumInitializers,
 		enumMemberLiterals,
+		enumValueConsistency,
 		equalityOperatorNegations,
 		evolvingVariableTypes,
 		exceptionAssignments,
