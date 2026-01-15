@@ -82,6 +82,7 @@ import enumValueConsistency from "./rules/enumValueConsistency.ts";
 import enumValueDuplicates from "./rules/enumValueDuplicates.ts";
 import equalityOperatorNegations from "./rules/equalityOperatorNegations.ts";
 import errorMessages from "./rules/errorMessages.ts";
+import errorSubclassProperties from "./rules/errorSubclassProperties.ts";
 import evolvingVariableTypes from "./rules/evolvingVariableTypes.ts";
 import exceptionAssignments from "./rules/exceptionAssignments.ts";
 import fetchMethodBodies from "./rules/fetchMethodBodies.ts";
@@ -228,6 +229,7 @@ export const ts = createPlugin({
 		enumValueDuplicates,
 		equalityOperatorNegations,
 		errorMessages,
+		errorSubclassProperties,
 		evolvingVariableTypes,
 		exceptionAssignments,
 		fetchMethodBodies,
