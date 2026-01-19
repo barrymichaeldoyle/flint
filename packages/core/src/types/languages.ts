@@ -1,4 +1,5 @@
 import type { CommentDirective } from "./directives.ts";
+import type { LinterHost } from "./host.ts";
 import type { FileReport } from "./reports.ts";
 import type { Rule, RuleAbout, RuleDefinition, RuleRuntime } from "./rules.ts";
 import type { AnyOptionalSchema, InferredOutputObject } from "./shapes.ts";
@@ -68,7 +69,9 @@ export interface Language<
 	AstNodesByName,
 	FileServices extends object,
 > extends LanguageDefinition<AstNodesByName, FileServices> {
-	createFileFactory(): LanguageFileFactory<AstNodesByName, FileServices>;
+	createFileFactory(
+		host: LinterHost,
+	): LanguageFileFactory<AstNodesByName, FileServices>;
 	createRule: LanguageCreateRule<AstNodesByName, FileServices>;
 }
 
@@ -91,10 +94,9 @@ export interface LanguageDefinition<
 	FileServices extends object,
 > {
 	about: LanguageAbout;
-	createFileFactory(): LanguageFileFactoryDefinition<
-		AstNodesByName,
-		FileServices
-	>;
+	createFileFactory(
+		host: LinterHost,
+	): LanguageFileFactoryDefinition<AstNodesByName, FileServices>;
 }
 
 export interface LanguageFileCacheImpacts {

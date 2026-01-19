@@ -1,4 +1,10 @@
-import { isConfig, runConfig, runConfigFixing } from "@flint.fyi/core";
+import {
+	createDiskBackedLinterHost,
+	createEphemeralLinterHost,
+	isConfig,
+	runConfig,
+	runConfigFixing,
+} from "@flint.fyi/core";
 import { debugForFile } from "debug-for-file";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
@@ -37,13 +43,18 @@ export async function runCliOnce(
 	const ignoreCache = !!values["cache-ignore"];
 
 	const skipDiagnostics = !!values["skip-diagnostics"];
+
+	const host = createEphemeralLinterHost(
+		createDiskBackedLinterHost(process.cwd()),
+	);
+
 	const lintResults = await (values.fix
-		? runConfigFixing(configDefinition, {
+		? runConfigFixing(configDefinition, host, {
 				ignoreCache,
 				requestedSuggestions: new Set(values["fix-suggestions"]),
 				skipDiagnostics,
 			})
-		: runConfig(configDefinition, { ignoreCache, skipDiagnostics }));
+		: runConfig(configDefinition, host, { ignoreCache, skipDiagnostics }));
 
 	// TODO: Eventually, it'd be nice to move everything fully in-memory.
 	// This would be better for performance to avoid excess file system I/O.

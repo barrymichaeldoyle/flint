@@ -18,13 +18,13 @@ export function createLanguage<AstNodesByName, FileServices extends object>(
 	const language: Language<AstNodesByName, FileServices> = {
 		...languageDefinition,
 
-		createFileFactory() {
+		createFileFactory(host) {
 			log(
 				"Creating file factory for language: %s",
 				languageDefinition.about.name,
 			);
 
-			const fileFactoryDefinition = languageDefinition.createFileFactory();
+			const fileFactoryDefinition = languageDefinition.createFileFactory(host);
 
 			log("Created file factory.");
 
