@@ -130,6 +130,7 @@ import namedDefaultExports from "./rules/namedDefaultExports.ts";
 import namespaceDeclarations from "./rules/namespaceDeclarations.ts";
 import namespaceImplicitAmbientImports from "./rules/namespaceImplicitAmbientImports.ts";
 import namespaceKeywords from "./rules/namespaceKeywords.ts";
+import nativeObjectExtensions from "./rules/nativeObjectExtensions.ts";
 import negativeIndexLengthMethods from "./rules/negativeIndexLengthMethods.ts";
 import negativeZeroComparisons from "./rules/negativeZeroComparisons.ts";
 import newExpressions from "./rules/newExpressions.ts";
@@ -301,6 +302,7 @@ export const ts = createPlugin({
 		namespaceDeclarations,
 		namespaceImplicitAmbientImports,
 		namespaceKeywords,
+		nativeObjectExtensions,
 		negativeIndexLengthMethods,
 		negativeZeroComparisons,
 		newExpressions,
