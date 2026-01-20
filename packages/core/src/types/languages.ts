@@ -56,12 +56,6 @@ export interface LanguageCreateRule<
 export interface FileAboutData {
 	filePath: string;
 	filePathAbsolute: string;
-}
-
-/**
- * Description of a file's contents and representation in the file system.
- */
-export interface FileDiskData extends FileAboutData {
 	sourceText: string;
 }
 
@@ -114,7 +108,7 @@ export interface LanguageFile<
 	AstNodesByName,
 	FileServices extends object,
 > extends Disposable {
-	about: FileDiskData;
+	about: FileAboutData;
 	cache?: LanguageFileCacheImpacts;
 	getDiagnostics?(): LanguageDiagnostics;
 	runVisitors<
@@ -134,7 +128,7 @@ export interface LanguageFileDefinition<
 	AstNodesByName,
 	FileServices extends object,
 > extends Partial<Disposable> {
-	about: FileDiskData;
+	about: FileAboutData;
 	cache?: LanguageFileCacheImpacts;
 	getDiagnostics?(): LanguageDiagnostics;
 	runVisitors<
@@ -154,11 +148,8 @@ export interface LanguageFileFactory<
 	AstNodesByName,
 	FileServices extends object,
 > extends Disposable {
-	prepareFromDisk(
+	prepareFile(
 		data: FileAboutData,
-	): LanguageFileMetadata<AstNodesByName, FileServices>;
-	prepareFromVirtual(
-		data: FileDiskData,
 	): LanguageFileMetadata<AstNodesByName, FileServices>;
 }
 
@@ -181,11 +172,8 @@ export interface LanguageFileFactoryDefinition<
 	AstNodesByName,
 	FileServices extends object,
 > extends Partial<Disposable> {
-	prepareFromDisk(
+	prepareFile(
 		data: FileAboutData,
-	): LanguageFileMetadataDefinition<AstNodesByName, FileServices>;
-	prepareFromVirtual(
-		data: FileDiskData,
 	): LanguageFileMetadataDefinition<AstNodesByName, FileServices>;
 }
 

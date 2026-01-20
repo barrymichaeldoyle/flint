@@ -79,10 +79,7 @@ export const typescriptLanguage = createLanguage<
 		}
 
 		return {
-			prepareFromDisk(data) {
-				return prepareFile(data);
-			},
-			prepareFromVirtual(data) {
+			prepareFile(data) {
 				return prepareFile(data);
 			},
 		};

@@ -1,4 +1,4 @@
-import { makeAbsolute } from "@flint.fyi/utils";
+import { makeAbsolute, nullThrows } from "@flint.fyi/utils";
 import { CachedFactory } from "cached-factory";
 
 import type { FileCacheStorage } from "../types/cache.ts";
@@ -24,9 +24,13 @@ export function collectLanguageMetadataByFilePath(
 			const fileFactory = language.createFileFactory(host);
 
 			return new CachedFactory((filePath: string) =>
-				fileFactory.prepareFromDisk({
+				fileFactory.prepareFile({
 					filePath,
 					filePathAbsolute: makeAbsolute(filePath),
+					sourceText: nullThrows(
+						host.readFile(filePath),
+						`Expected ${filePath} to exist`,
+					),
 				}),
 			);
 		},
