@@ -133,6 +133,7 @@ import namespaceKeywords from "./rules/namespaceKeywords.ts";
 import nativeObjectExtensions from "./rules/nativeObjectExtensions.ts";
 import negativeIndexLengthMethods from "./rules/negativeIndexLengthMethods.ts";
 import negativeZeroComparisons from "./rules/negativeZeroComparisons.ts";
+import newDefinitions from "./rules/newDefinitions.ts";
 import newExpressions from "./rules/newExpressions.ts";
 import newNativeNonConstructors from "./rules/newNativeNonConstructors.ts";
 import nonNullableTypeAssertions from "./rules/nonNullableTypeAssertions.ts";
@@ -307,6 +308,7 @@ export const ts = createPlugin({
 		nativeObjectExtensions,
 		negativeIndexLengthMethods,
 		negativeZeroComparisons,
+		newDefinitions,
 		newExpressions,
 		newNativeNonConstructors,
 		nonNullableTypeAssertions,
