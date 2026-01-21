@@ -147,6 +147,7 @@ import numberMethodRanges from "./rules/numberMethodRanges.ts";
 import numberStaticMethods from "./rules/numberStaticMethods.ts";
 import numericErasingOperations from "./rules/numericErasingOperations.ts";
 import numericLiteralParsing from "./rules/numericLiteralParsing.ts";
+import numericPrecision from "./rules/numericPrecision.ts";
 import objectAssignSpreads from "./rules/objectAssignSpreads.ts";
 import objectCalls from "./rules/objectCalls.ts";
 import objectEntriesMethods from "./rules/objectEntriesMethods.ts";
@@ -329,6 +330,7 @@ export const ts = createPlugin({
 		numberStaticMethods,
 		numericErasingOperations,
 		numericLiteralParsing,
+		numericPrecision,
 		objectAssignSpreads,
 		objectCalls,
 		objectEntriesMethods,
