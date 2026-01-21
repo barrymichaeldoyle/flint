@@ -147,6 +147,7 @@ import numberStaticMethods from "./rules/numberStaticMethods.ts";
 import numericErasingOperations from "./rules/numericErasingOperations.ts";
 import numericLiteralParsing from "./rules/numericLiteralParsing.ts";
 import objectCalls from "./rules/objectCalls.ts";
+import objectEntriesMethods from "./rules/objectEntriesMethods.ts";
 import objectHasOwns from "./rules/objectHasOwns.ts";
 import objectKeyDuplicates from "./rules/objectKeyDuplicates.ts";
 import objectProto from "./rules/objectProto.ts";
@@ -327,6 +328,7 @@ export const ts = createPlugin({
 		numericErasingOperations,
 		numericLiteralParsing,
 		objectCalls,
+		objectEntriesMethods,
 		objectHasOwns,
 		objectKeyDuplicates,
 		objectProto,
