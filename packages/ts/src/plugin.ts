@@ -164,6 +164,7 @@ import octalNumbers from "./rules/octalNumbers.ts";
 import parameterReassignments from "./rules/parameterReassignments.ts";
 import parseIntRadixes from "./rules/parseIntRadixes.ts";
 import propertyAccessNotation from "./rules/propertyAccessNotation.ts";
+import recursionOnlyArguments from "./rules/recursionOnlyArguments.ts";
 import returnAssignments from "./rules/returnAssignments.ts";
 import selfAssignments from "./rules/selfAssignments.ts";
 import selfComparisons from "./rules/selfComparisons.ts";
@@ -354,6 +355,7 @@ export const ts = createPlugin({
 		parameterReassignments,
 		parseIntRadixes,
 		propertyAccessNotation,
+		recursionOnlyArguments,
 		returnAssignments,
 		selfAssignments,
 		selfComparisons,
