@@ -162,6 +162,7 @@ import objectTypeDefinitions from "./rules/objectTypeDefinitions.ts";
 import octalEscapes from "./rules/octalEscapes.ts";
 import octalNumbers from "./rules/octalNumbers.ts";
 import operatorAssignmentShorthand from "./rules/operatorAssignmentShorthand.ts";
+import overloadSignaturesAdjacent from "./rules/overloadSignaturesAdjacent.ts";
 import parameterReassignments from "./rules/parameterReassignments.ts";
 import parseIntRadixes from "./rules/parseIntRadixes.ts";
 import propertyAccessNotation from "./rules/propertyAccessNotation.ts";
@@ -354,6 +355,7 @@ export const ts = createPlugin({
 		octalEscapes,
 		octalNumbers,
 		operatorAssignmentShorthand,
+		overloadSignaturesAdjacent,
 		parameterReassignments,
 		parseIntRadixes,
 		propertyAccessNotation,
