@@ -15072,7 +15072,8 @@
 		"flint": {
 			"name": "regexGraphemeStringLiterals",
 			"plugin": "ts",
-			"preset": "logical",
+			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		}
 	},

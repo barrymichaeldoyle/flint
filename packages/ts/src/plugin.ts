@@ -186,6 +186,7 @@ import regexEmptyCapturingGroups from "./rules/regexEmptyCapturingGroups.ts";
 import regexEmptyGroups from "./rules/regexEmptyGroups.ts";
 import regexEmptyLazyQuantifiers from "./rules/regexEmptyLazyQuantifiers.ts";
 import regexExecutors from "./rules/regexExecutors.ts";
+import regexGraphemeStringLiterals from "./rules/regexGraphemeStringLiterals.ts";
 import returnAssignments from "./rules/returnAssignments.ts";
 import selfAssignments from "./rules/selfAssignments.ts";
 import selfComparisons from "./rules/selfComparisons.ts";
@@ -398,6 +399,7 @@ export const ts = createPlugin({
 		regexEmptyGroups,
 		regexEmptyLazyQuantifiers,
 		regexExecutors,
+		regexGraphemeStringLiterals,
 		returnAssignments,
 		selfAssignments,
 		selfComparisons,
