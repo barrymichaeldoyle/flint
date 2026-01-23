@@ -170,6 +170,7 @@ import recursionOnlyArguments from "./rules/recursionOnlyArguments.ts";
 import reduceTypeParameters from "./rules/reduceTypeParameters.ts";
 import redundantTypeConstituents from "./rules/redundantTypeConstituents.ts";
 import regexAllGlobalFlags from "./rules/regexAllGlobalFlags.ts";
+import regexAmbiguousInvalidity from "./rules/regexAmbiguousInvalidity.ts";
 import regexCharacterClasses from "./rules/regexCharacterClasses.ts";
 import regexCharacterClassRanges from "./rules/regexCharacterClassRanges.ts";
 import regexConciseCharacterClassNegations from "./rules/regexConciseCharacterClassNegations.ts";
@@ -373,6 +374,7 @@ export const ts = createPlugin({
 		reduceTypeParameters,
 		redundantTypeConstituents,
 		regexAllGlobalFlags,
+		regexAmbiguousInvalidity,
 		regexCharacterClasses,
 		regexCharacterClassRanges,
 		regexConciseCharacterClassNegations,
