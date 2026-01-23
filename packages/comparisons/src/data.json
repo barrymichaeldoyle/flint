@@ -15028,7 +15028,8 @@
 		"flint": {
 			"name": "regexEmptyStringLiterals",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
