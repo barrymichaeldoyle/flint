@@ -79,10 +79,8 @@ export default ruleCreator.createRule(typescriptLanguage, {
 				// However, isFunctionLike also checks for signature-like nodes,
 				// whereas isFunctionLikeDeclaration checks only for function-like nodes.
 				/* eslint-disable @typescript-eslint/no-deprecated */
-				// flint-disable-lines-begin deprecated
 				tsutils.isFunctionLikeDeclaration,
 				/* eslint-enable @typescript-eslint/no-deprecated */
-				// flint-disable-lines-end deprecated
 			);
 			if (!functionNode) {
 				return;
