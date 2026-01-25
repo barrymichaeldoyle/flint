@@ -15516,7 +15516,8 @@
 		"flint": {
 			"name": "regexTestMethods",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
