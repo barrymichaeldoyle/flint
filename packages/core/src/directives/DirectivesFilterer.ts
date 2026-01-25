@@ -54,9 +54,7 @@ export class DirectivesFilterer {
 				report,
 			);
 
-			// This tracks which directives actually suppressed reports
 			if (rangeMatched) {
-				// Find which specific range(s) matched this report
 				for (const range of directiveRanges) {
 					if (
 						range.lines.begin <= report.range.begin.line &&
@@ -65,11 +63,9 @@ export class DirectivesFilterer {
 							selectionMatchesReport(selection, report),
 						)
 					) {
-						// This range matched - find directives that contributed to creating it
 						for (const directive of this.#directivesForRanges) {
 							const directiveLine = directive.range.begin.line;
 
-							// Check if directive's selections overlap with range's selections
 							const hasMatchingSelection = directive.selections.some((sel) =>
 								range.selections.some((rangeSel) => rangeSel.test(sel)),
 							);
@@ -78,21 +74,19 @@ export class DirectivesFilterer {
 								continue;
 							}
 
+							const nextDirectiveLine = directiveLine + 1;
 							if (directive.type === "disable-lines-begin") {
-								// Checks if this directive started the range
-								if (directiveLine + 1 === range.lines.begin) {
+								if (nextDirectiveLine === range.lines.begin) {
 									matchedDirectives.add(directive);
 								}
 							} else if (directive.type === "disable-lines-end") {
-								// Checks if this directive ended the range
 								if (directiveLine === range.lines.end) {
 									matchedDirectives.add(directive);
 								}
 							} else {
-								// Handles just the disable-next-line case
 								if (
-									directiveLine + 1 >= range.lines.begin &&
-									directiveLine + 1 <= range.lines.end
+									nextDirectiveLine >= range.lines.begin &&
+									nextDirectiveLine <= range.lines.end
 								) {
 									matchedDirectives.add(directive);
 								}
