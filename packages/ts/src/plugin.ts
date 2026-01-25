@@ -205,6 +205,7 @@ import regexNonStandardFlags from "./rules/regexNonStandardFlags.ts";
 import regexObscureRanges from "./rules/regexObscureRanges.ts";
 import regexOctalEscapes from "./rules/regexOctalEscapes.ts";
 import regexResultArrayGroups from "./rules/regexResultArrayGroups.ts";
+import regexSetOperationOptimizations from "./rules/regexSetOperationOptimizations.ts";
 import regexStarQuantifiers from "./rules/regexStarQuantifiers.ts";
 import regexSuperLinearBacktracking from "./rules/regexSuperLinearBacktracking.ts";
 import regexTestMethods from "./rules/regexTestMethods.ts";
@@ -439,6 +440,7 @@ export const ts = createPlugin({
 		regexObscureRanges,
 		regexOctalEscapes,
 		regexResultArrayGroups,
+		regexSetOperationOptimizations,
 		regexStarQuantifiers,
 		regexSuperLinearBacktracking,
 		regexTestMethods,
