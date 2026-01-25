@@ -209,6 +209,7 @@ import regexSetOperationOptimizations from "./rules/regexSetOperationOptimizatio
 import regexStarQuantifiers from "./rules/regexStarQuantifiers.ts";
 import regexSuperLinearBacktracking from "./rules/regexSuperLinearBacktracking.ts";
 import regexTestMethods from "./rules/regexTestMethods.ts";
+import regexUnicodeCodepointEscapes from "./rules/regexUnicodeCodepointEscapes.ts";
 import returnAssignments from "./rules/returnAssignments.ts";
 import selfAssignments from "./rules/selfAssignments.ts";
 import selfComparisons from "./rules/selfComparisons.ts";
@@ -444,6 +445,7 @@ export const ts = createPlugin({
 		regexStarQuantifiers,
 		regexSuperLinearBacktracking,
 		regexTestMethods,
+		regexUnicodeCodepointEscapes,
 		returnAssignments,
 		selfAssignments,
 		selfComparisons,
