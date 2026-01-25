@@ -15507,7 +15507,8 @@
 		"flint": {
 			"name": "regexSuperLinearMoves",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
