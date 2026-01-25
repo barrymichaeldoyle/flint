@@ -741,7 +741,8 @@
 		"flint": {
 			"name": "missingPlaceholders",
 			"plugin": "flint",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -754,7 +755,8 @@
 		"flint": {
 			"name": "nodePropertyInChecks",
 			"plugin": "flint",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -1350,7 +1352,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/no-access-key",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/no-access-key.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/no-access-key.md"
 			}
 		],
 		"flint": {
@@ -1370,7 +1372,7 @@
 		"eslint": [
 			{
 				"name": "react/no-adjacent-inline-elements",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-adjacent-inline-elements.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-adjacent-inline-elements.md"
 			}
 		],
 		"flint": {
@@ -1384,7 +1386,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/alt-text",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/alt-text.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/alt-text.md"
 			}
 		],
 		"flint": {
@@ -1404,7 +1406,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/anchor-ambiguous-text",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-ambiguous-text.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/anchor-ambiguous-text.md"
 			}
 		],
 		"flint": {
@@ -1425,7 +1427,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/anchor-content",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-content.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/anchor-content.md"
 			}
 		],
 		"flint": {
@@ -1445,7 +1447,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/anchor-is-valid",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md"
 			}
 		],
 		"flint": {
@@ -1465,7 +1467,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/aria-activedescendant-has-tabindex",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/aria-activedescendant-has-tabindex.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/aria-activedescendant-has-tabindex.md"
 			}
 		],
 		"flint": {
@@ -1485,7 +1487,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/no-aria-hidden-on-focusable",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/no-aria-hidden-on-focusable.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/no-aria-hidden-on-focusable.md"
 			}
 		],
 		"flint": {
@@ -1506,7 +1508,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/aria-props",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/aria-props.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/aria-props.md"
 			}
 		],
 		"flint": {
@@ -1526,7 +1528,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/aria-proptypes",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/aria-proptypes.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/aria-proptypes.md"
 			}
 		],
 		"flint": {
@@ -1540,7 +1542,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/aria-role",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/aria-role.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/aria-role.md"
 			}
 		],
 		"flint": {
@@ -1560,7 +1562,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/aria-unsupported-elements",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/aria-unsupported-elements.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/aria-unsupported-elements.md"
 			}
 		],
 		"flint": {
@@ -1580,7 +1582,7 @@
 		"eslint": [
 			{
 				"name": "react/no-invalid-html-attribute",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-invalid-html-attribute.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-invalid-html-attribute.md"
 			}
 		],
 		"flint": {
@@ -1593,7 +1595,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/autocomplete-valid",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/autocomplete-valid.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/autocomplete-valid.md"
 			}
 		],
 		"flint": {
@@ -1613,7 +1615,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/no-autofocus",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/no-autofocus.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/no-autofocus.md"
 			}
 		],
 		"flint": {
@@ -1633,7 +1635,7 @@
 		"eslint": [
 			{
 				"name": "react/boolean-prop-naming",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/boolean-prop-naming.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/boolean-prop-naming.md"
 			}
 		],
 		"flint": {
@@ -1653,7 +1655,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-boolean-value",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-boolean-value.md"
 			}
 		],
 		"flint": {
@@ -1691,7 +1693,7 @@
 		"eslint": [
 			{
 				"name": "react/button-has-type",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/button-has-type.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/button-has-type.md"
 			}
 		],
 		"flint": {
@@ -1705,7 +1707,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-curly-brace-presence",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-curly-brace-presence.md"
 			}
 		],
 		"flint": {
@@ -1725,7 +1727,7 @@
 		"eslint": [
 			{
 				"name": "react/no-children-prop",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-children-prop.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-children-prop.md"
 			}
 		],
 		"flint": {
@@ -1739,7 +1741,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-child-element-spacing",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-child-element-spacing.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-child-element-spacing.md"
 			}
 		],
 		"flint": {
@@ -1753,7 +1755,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/click-events-have-key-events",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/click-events-have-key-events.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/click-events-have-key-events.md"
 			}
 		],
 		"flint": {
@@ -1773,7 +1775,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-closing-bracket-location",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-closing-bracket-location.md"
 			}
 		],
 		"flint": {
@@ -1787,7 +1789,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-closing-tag-location",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-closing-tag-location.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-closing-tag-location.md"
 			}
 		],
 		"flint": {
@@ -1807,7 +1809,7 @@
 		"eslint": [
 			{
 				"name": "react/no-comment-textnodes",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-comment-textnodes.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-comment-textnodes.md"
 			}
 		],
 		"flint": {
@@ -1821,7 +1823,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-pascal-case",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-pascal-case.md"
 			}
 		],
 		"flint": {
@@ -1835,7 +1837,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-curly-newline",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-curly-newline.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-curly-newline.md"
 			}
 		],
 		"flint": {
@@ -1849,7 +1851,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-curly-spacing",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-curly-spacing.md"
 			}
 		],
 		"flint": {
@@ -1863,7 +1865,7 @@
 		"eslint": [
 			{
 				"name": "react/no-object-type-as-default-prop",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-object-type-as-default-prop.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-object-type-as-default-prop.md"
 			}
 		],
 		"flint": {
@@ -1877,7 +1879,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/no-distracting-elements",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/no-distracting-elements.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/no-distracting-elements.md"
 			}
 		],
 		"flint": {
@@ -1897,7 +1899,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-props-no-spread-multi",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-spread-multi.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-props-no-spread-multi.md"
 			}
 		],
 		"deno": [
@@ -1922,7 +1924,7 @@
 		"eslint": [
 			{
 				"name": "react/void-dom-elements-no-children",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/void-dom-elements-no-children.md"
 			}
 		],
 		"flint": {
@@ -1937,7 +1939,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-equals-spacing",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-equals-spacing.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-equals-spacing.md"
 			}
 		],
 		"flint": {
@@ -1951,7 +1953,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-one-expression-per-line",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-one-expression-per-line.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-one-expression-per-line.md"
 			}
 		],
 		"flint": {
@@ -1965,7 +1967,7 @@
 		"eslint": [
 			{
 				"name": "react/filename-extension",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/filename-extension.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/filename-extension.md"
 			}
 		],
 		"flint": {
@@ -1979,7 +1981,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-fragments",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-fragments.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-fragments.md"
 			}
 		],
 		"flint": {
@@ -1992,7 +1994,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-no-bind",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-no-bind.md"
 			}
 		],
 		"flint": {
@@ -2006,7 +2008,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-handler-names",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-handler-names.md"
 			}
 		],
 		"flint": {
@@ -2020,7 +2022,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/heading-has-content",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/heading-has-content.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/heading-has-content.md"
 			}
 		],
 		"flint": {
@@ -2034,7 +2036,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/html-has-lang",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/html-has-lang.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/html-has-lang.md"
 			}
 		],
 		"flint": {
@@ -2054,7 +2056,7 @@
 		"eslint": [
 			{
 				"name": "react/iframe-missing-sandbox",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/iframe-missing-sandbox.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/iframe-missing-sandbox.md"
 			}
 		],
 		"flint": {
@@ -2068,7 +2070,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/iframe-has-title",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/iframe-has-title.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/iframe-has-title.md"
 			}
 		],
 		"flint": {
@@ -2088,7 +2090,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/img-redundant-alt",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/img-redundant-alt.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/img-redundant-alt.md"
 			}
 		],
 		"flint": {
@@ -2107,7 +2109,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-indent",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-indent.md"
 			}
 		],
 		"flint": {
@@ -2121,7 +2123,7 @@
 		"eslint": [
 			{
 				"name": "react/checked-requires-onchange-or-readonly",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/checked-requires-onchange-or-readonly.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/checked-requires-onchange-or-readonly.md"
 			}
 		],
 		"flint": {
@@ -2134,7 +2136,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/no-interactive-element-to-noninteractive-role",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/no-interactive-element-to-noninteractive-role.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/no-interactive-element-to-noninteractive-role.md"
 			}
 		],
 		"flint": {
@@ -2148,7 +2150,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/interactive-elements-focusable",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/interactive-elements-focusable.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/interactive-elements-focusable.md"
 			}
 		],
 		"flint": {
@@ -2175,7 +2177,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/label-has-associated-control",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/label-has-associated-control.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/label-has-associated-control.md"
 			}
 		],
 		"flint": {
@@ -2195,7 +2197,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/lang",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/lang.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/lang.md"
 			}
 		],
 		"flint": {
@@ -2216,7 +2218,7 @@
 		"eslint": [
 			{
 				"name": "react/no-array-function-lifecycle",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-array-function-lifecycle.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-array-function-lifecycle.md"
 			}
 		],
 		"flint": {
@@ -2230,7 +2232,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-no-literals",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-literals.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-no-literals.md"
 			}
 		],
 		"flint": {
@@ -2244,7 +2246,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-max-depth",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-max-depth.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-max-depth.md"
 			}
 		],
 		"flint": {
@@ -2258,7 +2260,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-max-props-per-line",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-max-props-per-line.md"
 			}
 		],
 		"flint": {
@@ -2272,7 +2274,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/media-has-caption",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/media-has-caption.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/media-has-caption.md"
 			}
 		],
 		"flint": {
@@ -2305,7 +2307,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/mouse-events-have-key-events",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/mouse-events-have-key-events.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/mouse-events-have-key-events.md"
 			}
 		],
 		"flint": {
@@ -2325,7 +2327,7 @@
 		"eslint": [
 			{
 				"name": "react/no-namespace",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-namespace.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-namespace.md"
 			}
 		],
 		"flint": {
@@ -2339,7 +2341,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-newline",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-newline.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-newline.md"
 			}
 		],
 		"flint": {
@@ -2353,7 +2355,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/no-noninteractive-element-interactions",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/no-noninteractive-element-interactions.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/no-noninteractive-element-interactions.md"
 			}
 		],
 		"flint": {
@@ -2367,7 +2369,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/no-noninteractive-element-to-interactive-role",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/no-noninteractive-element-to-interactive-role.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/no-noninteractive-element-to-interactive-role.md"
 			}
 		],
 		"flint": {
@@ -2381,7 +2383,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/no-noninteractive-tabindex",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/no-noninteractive-tabindex.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/no-noninteractive-tabindex.md"
 			}
 		],
 		"flint": {
@@ -2407,7 +2409,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/no-duplicate-props",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-no-duplicate-props.md"
 			}
 		],
 		"flint": {
@@ -2421,7 +2423,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-indent-props",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-indent-props.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-indent-props.md"
 			}
 		],
 		"flint": {
@@ -2435,7 +2437,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-first-prop-newline",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-newline.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-first-prop-newline.md"
 			}
 		],
 		"flint": {
@@ -2449,7 +2451,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-sort-props",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-sort-props.md"
 			}
 		],
 		"flint": {
@@ -2463,7 +2465,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-no-multi-spaces",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-multi-spaces.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-no-multi-spaces.md"
 			}
 		],
 		"flint": {
@@ -2477,7 +2479,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-props-no-spreading",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-spreading.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-props-no-spreading.md"
 			}
 		],
 		"flint": {
@@ -2491,7 +2493,7 @@
 		"eslint": [
 			{
 				"name": "react/no-redundant-should-component-update",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-redundant-should-component-update.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-redundant-should-component-update.md"
 			}
 		],
 		"flint": {
@@ -2505,7 +2507,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-no-leaked-render",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-leaked-render.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-no-leaked-render.md"
 			}
 		],
 		"flint": {
@@ -2519,7 +2521,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/no-redundant-roles",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/no-redundant-roles.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/no-redundant-roles.md"
 			}
 		],
 		"flint": {
@@ -2539,7 +2541,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/role-has-required-aria-props",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/role-has-required-aria-props.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/role-has-required-aria-props.md"
 			}
 		],
 		"flint": {
@@ -2559,7 +2561,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/role-supports-aria-props",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/role-supports-aria-props.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/role-supports-aria-props.md"
 			}
 		],
 		"flint": {
@@ -2579,7 +2581,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/prefer-tag-over-role",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/prefer-tag-over-role.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/prefer-tag-over-role.md"
 			}
 		],
 		"flint": {
@@ -2600,7 +2602,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/scope",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/scope.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/scope.md"
 			}
 		],
 		"flint": {
@@ -2620,7 +2622,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-no-script-url",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-script-url.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-no-script-url.md"
 			}
 		],
 		"flint": {
@@ -2633,7 +2635,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-no-target-blank",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-no-target-blank.md"
 			}
 		],
 		"flint": {
@@ -2647,7 +2649,7 @@
 		"eslint": [
 			{
 				"name": "react/self-closing-comp",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/self-closing-comp"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/self-closing-comp"
 			}
 		],
 		"flint": {
@@ -2660,7 +2662,7 @@
 		"eslint": [
 			{
 				"name": "react/no-access-state-in-setstate",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-access-state-in-setstate.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-access-state-in-setstate.md"
 			}
 		],
 		"flint": {
@@ -2674,7 +2676,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/no-static-element-interactions",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/no-static-element-interactions.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/no-static-element-interactions.md"
 			}
 		],
 		"flint": {
@@ -2702,7 +2704,7 @@
 		"eslint": [
 			{
 				"name": "jsx-a11y/tabindex-no-positive",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/tabindex-no-positive.md"
+				"url": "https://github.com/jsx-eslint/eslint-jsx-a11y/blob/HEAD/docs/rules/tabindex-no-positive.md"
 			}
 		],
 		"flint": {
@@ -2722,7 +2724,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-tag-closing",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-tag-closing.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-tag-closing.md"
 			}
 		],
 		"flint": {
@@ -2742,7 +2744,7 @@
 		"eslint": [
 			{
 				"name": "react/no-unescaped-entities",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unescaped-entities.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-unescaped-entities.md"
 			}
 		],
 		"flint": {
@@ -2756,7 +2758,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-no-useless-fragment",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-useless-fragment.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-no-useless-fragment.md"
 			}
 		],
 		"deno": [
@@ -2776,7 +2778,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-wrap-multilines",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-wrap-multilines.md"
 			}
 		],
 		"flint": {
@@ -3237,7 +3239,6 @@
 			"name": "headingRootPresence",
 			"plugin": "md",
 			"preset": "logical",
-			"status": "implemented",
 			"strictness": "strict"
 		},
 		"markdownlint": [
@@ -3458,7 +3459,6 @@
 			"name": "linkDescriptions",
 			"plugin": "md",
 			"preset": "logical",
-			"status": "implemented",
 			"strictness": "strict"
 		},
 		"markdownlint": [
@@ -3478,7 +3478,8 @@
 		"flint": {
 			"name": "linkFragments",
 			"plugin": "md",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"markdownlint": [
 			{
@@ -3643,7 +3644,8 @@
 		"flint": {
 			"name": "tableColumnCounts",
 			"plugin": "md",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"markdownlint": [
 			{
@@ -4709,7 +4711,8 @@
 		"flint": {
 			"name": "unsupportedGlobals",
 			"plugin": "node",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "skipped"
 		}
 	},
 	{
@@ -4735,7 +4738,8 @@
 		"flint": {
 			"name": "unsupportedSyntax",
 			"plugin": "node",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "skipped"
 		}
 	},
 	{
@@ -5517,7 +5521,7 @@
 		"eslint": [
 			{
 				"name": "react/no-array-index-key",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-array-index-key.md"
 			}
 		],
 		"flint": {
@@ -5531,7 +5535,7 @@
 		"eslint": [
 			{
 				"name": "react/prefer-es6-class",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/prefer-es6-class.md"
 			}
 		],
 		"flint": {
@@ -5545,7 +5549,7 @@
 		"eslint": [
 			{
 				"name": "react/state-property-placement",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/state-property-placement.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/state-property-placement.md"
 			}
 		],
 		"flint": {
@@ -5559,7 +5563,7 @@
 		"eslint": [
 			{
 				"name": "react/state-in-constructor",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/state-in-constructor.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/state-in-constructor.md"
 			}
 		],
 		"flint": {
@@ -5573,7 +5577,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/config",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/config"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/config"
 			}
 		],
 		"flint": {
@@ -5586,7 +5590,7 @@
 		"eslint": [
 			{
 				"name": "react/prefer-read-only-props",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prefer-read-only-props.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/prefer-read-only-props.md"
 			}
 		],
 		"flint": {
@@ -5599,7 +5603,7 @@
 		"eslint": [
 			{
 				"name": "react/no-did-mount-set-state",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-did-mount-set-state.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-did-mount-set-state.md"
 			}
 		],
 		"flint": {
@@ -5613,7 +5617,7 @@
 		"eslint": [
 			{
 				"name": "react/no-did-update-set-state",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-did-update-set-state.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-did-update-set-state.md"
 			}
 		],
 		"flint": {
@@ -5627,7 +5631,7 @@
 		"eslint": [
 			{
 				"name": "react/display-name",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/display-name.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/display-name.md"
 			}
 		],
 		"flint": {
@@ -5641,7 +5645,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/component-hook-factories",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/component-hook-factories"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/component-hook-factories"
 			}
 		],
 		"flint": {
@@ -5654,7 +5658,7 @@
 		"eslint": [
 			{
 				"name": "react/no-unstable-nested-components",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unstable-nested-components.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-unstable-nested-components.md"
 			}
 		],
 		"flint": {
@@ -5667,7 +5671,7 @@
 		"eslint": [
 			{
 				"name": "react/require-optimization",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/require-optimization.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/require-optimization.md"
 			}
 		],
 		"flint": {
@@ -5681,7 +5685,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/sort-comp",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/sort-comp"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/sort-comp"
 			}
 		],
 		"flint": {
@@ -5695,7 +5699,7 @@
 		"eslint": [
 			{
 				"name": "react/no-multi-component",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-multi-component.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-multi-component.md"
 			}
 		],
 		"flint": {
@@ -5709,7 +5713,7 @@
 		"eslint": [
 			{
 				"name": "react/no-will-update-set-state",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-will-update-set-state.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-will-update-set-state.md"
 			}
 		],
 		"flint": {
@@ -5723,7 +5727,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-no-constructed-context-values",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-constructed-context-values.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-no-constructed-context-values.md"
 			}
 		],
 		"flint": {
@@ -5737,7 +5741,7 @@
 		"eslint": [
 			{
 				"name": "react/forbid-foreign-prop-types",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/forbid-foreign-prop-types.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/forbid-foreign-prop-types.md"
 			}
 		],
 		"flint": {
@@ -5751,7 +5755,7 @@
 		"eslint": [
 			{
 				"name": "react/no-deprecated",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-deprecated.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-deprecated.md"
 			}
 		],
 		"flint": {
@@ -5765,7 +5769,7 @@
 		"eslint": [
 			{
 				"name": "react/no-danger-with-children",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-danger-with-children.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-danger-with-children.md"
 			}
 		],
 		"flint": {
@@ -5778,7 +5782,7 @@
 		"eslint": [
 			{
 				"name": "react/no-danger",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-danger.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-danger.md"
 			}
 		],
 		"flint": {
@@ -5792,7 +5796,7 @@
 		"eslint": [
 			{
 				"name": "react/default-props-match-prop-types",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/default-props-match-prop-types.md"
 			}
 		],
 		"flint": {
@@ -5805,7 +5809,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/sort-default-props",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/sort-default-props"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/sort-default-props"
 			}
 		],
 		"flint": {
@@ -5819,7 +5823,7 @@
 		"eslint": [
 			{
 				"name": "react/destructuring",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/destructuring.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/destructuring.md"
 			}
 		],
 		"flint": {
@@ -5832,7 +5836,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/set-state-in-effect",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/set-state-in-effect"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/set-state-in-effect"
 			}
 		],
 		"flint": {
@@ -5845,7 +5849,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/error-boundaries",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/error-boundaries"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/error-boundaries"
 			}
 		],
 		"flint": {
@@ -5858,7 +5862,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/exhaustive-deps",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/exhaustive-deps"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/exhaustive-deps"
 			}
 		],
 		"flint": {
@@ -5871,7 +5875,7 @@
 		"eslint": [
 			{
 				"name": "react/no-find-dom-node",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-find-dom-node.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-find-dom-node.md"
 			}
 		],
 		"flint": {
@@ -5885,7 +5889,7 @@
 		"eslint": [
 			{
 				"name": "react/forward-ref-uses-ref",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/forward-ref-uses-ref.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/forward-ref-uses-ref.md"
 			}
 		],
 		"flint": {
@@ -5899,7 +5903,7 @@
 		"eslint": [
 			{
 				"name": "react/function-component-definition",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/function-component-definition.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/function-component-definition.md"
 			}
 		],
 		"flint": {
@@ -5912,7 +5916,7 @@
 		"eslint": [
 			{
 				"name": "react/no-this-in-sfc",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-this-in-sfc.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-this-in-sfc.md"
 			}
 		],
 		"flint": {
@@ -5925,7 +5929,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/gating",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/gating"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/gating"
 			}
 		],
 		"flint": {
@@ -5938,7 +5942,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/globals",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/globals"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/globals"
 			}
 		],
 		"flint": {
@@ -5951,7 +5955,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/immutability",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/immutability"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/immutability"
 			}
 		],
 		"flint": {
@@ -5964,7 +5968,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/incompatible-library",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/incompatible-library"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/incompatible-library"
 			}
 		],
 		"flint": {
@@ -5977,7 +5981,7 @@
 		"eslint": [
 			{
 				"name": "react/no-is-mounted",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-is-mounted.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-is-mounted.md"
 			}
 		],
 		"flint": {
@@ -5991,7 +5995,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-key",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-key.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-key.md"
 			}
 		],
 		"flint": {
@@ -6005,7 +6009,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/preserve-manual-memoization",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/preserve-manual-memoization"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/preserve-manual-memoization"
 			}
 		],
 		"flint": {
@@ -6018,7 +6022,7 @@
 		"eslint": [
 			{
 				"name": "react/require-default-props",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/require-default-props.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/require-default-props.md"
 			}
 		],
 		"flint": {
@@ -6032,7 +6036,7 @@
 		"eslint": [
 			{
 				"name": "react/no-unknown-property",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-unknown-property.md"
 			}
 		],
 		"flint": {
@@ -6045,7 +6049,7 @@
 		"eslint": [
 			{
 				"name": "react/prop-types",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prop-types.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/prop-types.md"
 			}
 		],
 		"flint": {
@@ -6058,7 +6062,7 @@
 		"eslint": [
 			{
 				"name": "react/prefer-exact-props",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prefer-exact-props.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/prefer-exact-props.md"
 			}
 		],
 		"flint": {
@@ -6072,7 +6076,7 @@
 		"eslint": [
 			{
 				"name": "react/prefer-read-only-props",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prefer-read-only-props.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/prefer-read-only-props.md"
 			}
 		],
 		"flint": {
@@ -6086,7 +6090,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/sort-prop-types",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/sort-prop-types"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/sort-prop-types"
 			}
 		],
 		"flint": {
@@ -6100,7 +6104,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/purity",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/purity"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/purity"
 			}
 		],
 		"flint": {
@@ -6113,7 +6117,7 @@
 		"eslint": [
 			{
 				"name": "react/react-in-jsx-scope",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/react-in-jsx-scope.md"
 			}
 		],
 		"flint": {
@@ -6127,7 +6131,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/refs",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/refs"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/refs"
 			}
 		],
 		"flint": {
@@ -6140,7 +6144,7 @@
 		"eslint": [
 			{
 				"name": "react/no-string-refs",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-string-refs.md"
 			}
 		],
 		"flint": {
@@ -6153,7 +6157,7 @@
 		"eslint": [
 			{
 				"name": "react/no-render-return-value",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-render-return-value.md"
 			}
 		],
 		"flint": {
@@ -6167,7 +6171,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/set-state-in-render",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/set-state-in-render"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/set-state-in-render"
 			}
 		],
 		"flint": {
@@ -6180,7 +6184,7 @@
 		"eslint": [
 			{
 				"name": "react/forbid-component-props",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/forbid-component-props.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/forbid-component-props.md"
 			}
 		],
 		"flint": {
@@ -6192,7 +6196,7 @@
 		"eslint": [
 			{
 				"name": "react/forbid-dom-props",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/forbid-dom-props.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/forbid-dom-props.md"
 			}
 		],
 		"flint": {
@@ -6204,7 +6208,7 @@
 		"eslint": [
 			{
 				"name": "react/forbid-elements",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/forbid-elements.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/forbid-elements.md"
 			}
 		],
 		"flint": {
@@ -6216,7 +6220,7 @@
 		"eslint": [
 			{
 				"name": "react/forbid-prop-types",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/forbid-prop-types.md"
 			}
 		],
 		"flint": {
@@ -6228,7 +6232,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/rules-of-hooks",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/rules-of-hooks"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/rules-of-hooks"
 			}
 		],
 		"flint": {
@@ -6241,7 +6245,7 @@
 		"eslint": [
 			{
 				"name": "react/no-set-state",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-set-state.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-set-state.md"
 			}
 		],
 		"flint": {
@@ -6255,7 +6259,7 @@
 		"eslint": [
 			{
 				"name": "react/no-direct-mutation-state",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-direct-mutation-state.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-direct-mutation-state.md"
 			}
 		],
 		"flint": {
@@ -6268,7 +6272,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/static-components",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/static-components"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/static-components"
 			}
 		],
 		"flint": {
@@ -6281,7 +6285,7 @@
 		"eslint": [
 			{
 				"name": "react/style-prop-object",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/style-prop-object.md"
 			}
 		],
 		"flint": {
@@ -6295,7 +6299,7 @@
 		"eslint": [
 			{
 				"name": "react/no-typos",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-typos.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-typos.md"
 			}
 		],
 		"flint": {
@@ -6308,7 +6312,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/unsupported-syntax",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/unsupported-syntax"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/unsupported-syntax"
 			}
 		],
 		"flint": {
@@ -6321,7 +6325,7 @@
 		"eslint": [
 			{
 				"name": "react/no-unused-class-component-methods",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unused-class-component-methods.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-unused-class-component-methods.md"
 			}
 		],
 		"flint": {
@@ -6334,7 +6338,7 @@
 		"eslint": [
 			{
 				"name": "react/no-unused-prop-types",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-unused-prop-types.md"
 			}
 		],
 		"flint": {
@@ -6347,7 +6351,7 @@
 		"eslint": [
 			{
 				"name": "react/no-unused-state",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unused-state.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/no-unused-state.md"
 			}
 		],
 		"flint": {
@@ -6360,7 +6364,7 @@
 		"eslint": [
 			{
 				"name": "react-hooks/use-memo",
-				"url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/use-memo"
+				"url": "https://react.dev/reference/eslint-react-hooks/lints/use-memo"
 			}
 		],
 		"flint": {
@@ -6373,7 +6377,7 @@
 		"eslint": [
 			{
 				"name": "react/jsx-uses-react",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/jsx-uses-react.md"
 			}
 		],
 		"flint": {
@@ -6387,7 +6391,7 @@
 		"eslint": [
 			{
 				"name": "react/hook-use-state",
-				"url": "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/hook-use-state.md"
+				"url": "https://github.com/jsx-eslint/eslint-react/blob/master/docs/rules/hook-use-state.md"
 			}
 		],
 		"flint": {
@@ -6400,7 +6404,7 @@
 		"eslint": [
 			{
 				"name": "solid/no-array-handlers",
-				"url": "https://github.com/solidjs-community/eslint-plugin-solid/blob/main/packages/eslint-plugin-solid/docs/no-array-handlers.md"
+				"url": "https://github.com/solidjs-community/eslint-solid/blob/main/packages/eslint-solid/docs/no-array-handlers.md"
 			}
 		],
 		"flint": {
@@ -6412,7 +6416,7 @@
 		"eslint": [
 			{
 				"name": "solid/components-return-once",
-				"url": "https://github.com/solidjs-community/eslint-plugin-solid/blob/main/packages/eslint-plugin-solid/docs/components-return-once.md"
+				"url": "https://github.com/solidjs-community/eslint-solid/blob/main/packages/eslint-solid/docs/components-return-once.md"
 			}
 		],
 		"flint": {
@@ -6425,7 +6429,7 @@
 		"eslint": [
 			{
 				"name": "solid/jsx-no-duplicate-props",
-				"url": "https://github.com/solidjs-community/eslint-plugin-solid/blob/main/packages/eslint-plugin-solid/docs/jsx-no-duplicate-props.md"
+				"url": "https://github.com/solidjs-community/eslint-solid/blob/main/packages/eslint-solid/docs/jsx-no-duplicate-props.md"
 			}
 		],
 		"flint": {
@@ -6439,7 +6443,7 @@
 		"eslint": [
 			{
 				"name": "solid/event-handlers",
-				"url": "https://github.com/solidjs-community/eslint-plugin-solid/blob/main/packages/eslint-plugin-solid/docs/event-handlers.md"
+				"url": "https://github.com/solidjs-community/eslint-solid/blob/main/packages/eslint-solid/docs/event-handlers.md"
 			}
 		],
 		"flint": {
@@ -6452,7 +6456,7 @@
 		"eslint": [
 			{
 				"name": "solid/prefer-for",
-				"url": "https://github.com/solidjs-community/eslint-plugin-solid/blob/main/packages/eslint-plugin-solid/docs/prefer-for.md"
+				"url": "https://github.com/solidjs-community/eslint-solid/blob/main/packages/eslint-solid/docs/prefer-for.md"
 			}
 		],
 		"flint": {
@@ -6465,7 +6469,7 @@
 		"eslint": [
 			{
 				"name": "solid/no-innerhtml",
-				"url": "https://github.com/solidjs-community/eslint-plugin-solid/blob/main/packages/eslint-plugin-solid/docs/no-innerhtml.md"
+				"url": "https://github.com/solidjs-community/eslint-solid/blob/main/packages/eslint-solid/docs/no-innerhtml.md"
 			}
 		],
 		"flint": {
@@ -6479,7 +6483,7 @@
 		"eslint": [
 			{
 				"name": "solid/no-unknown-namespaces",
-				"url": "https://github.com/solidjs-community/eslint-plugin-solid/blob/main/packages/eslint-plugin-solid/docs/no-unknown-namespaces.md"
+				"url": "https://github.com/solidjs-community/eslint-solid/blob/main/packages/eslint-solid/docs/no-unknown-namespaces.md"
 			}
 		],
 		"flint": {
@@ -6492,7 +6496,7 @@
 		"eslint": [
 			{
 				"name": "solid/jsx-no-script-url",
-				"url": "https://github.com/solidjs-community/eslint-plugin-solid/blob/main/packages/eslint-plugin-solid/docs/jsx-no-script-url.md"
+				"url": "https://github.com/solidjs-community/eslint-solid/blob/main/packages/eslint-solid/docs/jsx-no-script-url.md"
 			}
 		],
 		"flint": {
@@ -6506,7 +6510,7 @@
 		"eslint": [
 			{
 				"name": "solid/no-destructure",
-				"url": "https://github.com/solidjs-community/eslint-plugin-solid/blob/main/packages/eslint-plugin-solid/docs/no-destructure.md"
+				"url": "https://github.com/solidjs-community/eslint-solid/blob/main/packages/eslint-solid/docs/no-destructure.md"
 			}
 		],
 		"flint": {
@@ -6519,7 +6523,7 @@
 		"eslint": [
 			{
 				"name": "solid/no-proxy-apis",
-				"url": "https://github.com/solidjs-community/eslint-plugin-solid/blob/main/packages/eslint-plugin-solid/docs/apis.md"
+				"url": "https://github.com/solidjs-community/eslint-solid/blob/main/packages/eslint-solid/docs/apis.md"
 			}
 		],
 		"flint": {
@@ -6533,7 +6537,7 @@
 		"eslint": [
 			{
 				"name": "solid/reactivity",
-				"url": "https://github.com/solidjs-community/eslint-plugin-solid/blob/main/packages/eslint-plugin-solid/docs/reactivity.md"
+				"url": "https://github.com/solidjs-community/eslint-solid/blob/main/packages/eslint-solid/docs/reactivity.md"
 			}
 		],
 		"flint": {
@@ -6546,7 +6550,7 @@
 		"eslint": [
 			{
 				"name": "solid/no-react-deps",
-				"url": "https://github.com/solidjs-community/eslint-plugin-solid/blob/main/packages/eslint-plugin-solid/docs/no-react-deps.md"
+				"url": "https://github.com/solidjs-community/eslint-solid/blob/main/packages/eslint-solid/docs/no-react-deps.md"
 			}
 		],
 		"flint": {
@@ -6559,7 +6563,7 @@
 		"eslint": [
 			{
 				"name": "solid/no-react-specific-props",
-				"url": "https://github.com/solidjs-community/eslint-plugin-solid/blob/main/packages/eslint-plugin-solid/docs/no-react-specific-props.md"
+				"url": "https://github.com/solidjs-community/eslint-solid/blob/main/packages/eslint-solid/docs/no-react-specific-props.md"
 			}
 		],
 		"flint": {
@@ -6572,7 +6576,7 @@
 		"eslint": [
 			{
 				"name": "solid/self-closing-comp",
-				"url": "https://github.com/solidjs-community/eslint-plugin-solid/blob/main/packages/eslint-plugin-solid/docs/self-closing-comp.md"
+				"url": "https://github.com/solidjs-community/eslint-solid/blob/main/packages/eslint-solid/docs/self-closing-comp.md"
 			}
 		],
 		"flint": {
@@ -6586,7 +6590,7 @@
 		"eslint": [
 			{
 				"name": "solid/prefer-show",
-				"url": "https://github.com/solidjs-community/eslint-plugin-solid/blob/main/packages/eslint-plugin-solid/docs/prefer-show.md"
+				"url": "https://github.com/solidjs-community/eslint-solid/blob/main/packages/eslint-solid/docs/prefer-show.md"
 			}
 		],
 		"flint": {
@@ -6599,7 +6603,7 @@
 		"eslint": [
 			{
 				"name": "solid/imports",
-				"url": "https://github.com/solidjs-community/eslint-plugin-solid/blob/main/packages/eslint-plugin-solid/docs/imports.md"
+				"url": "https://github.com/solidjs-community/eslint-solid/blob/main/packages/eslint-solid/docs/imports.md"
 			}
 		],
 		"flint": {
@@ -6612,7 +6616,7 @@
 		"eslint": [
 			{
 				"name": "solid/style-prop",
-				"url": "https://github.com/solidjs-community/eslint-plugin-solid/blob/main/packages/eslint-plugin-solid/docs/style-prop.md"
+				"url": "https://github.com/solidjs-community/eslint-solid/blob/main/packages/eslint-solid/docs/style-prop.md"
 			}
 		],
 		"flint": {
@@ -6625,7 +6629,7 @@
 		"eslint": [
 			{
 				"name": "solid/jsx-no-undef",
-				"url": "https://github.com/solidjs-community/eslint-plugin-solid/blob/main/packages/eslint-plugin-solid/docs/jsx-no-undef.md"
+				"url": "https://github.com/solidjs-community/eslint-solid/blob/main/packages/eslint-solid/docs/jsx-no-undef.md"
 			}
 		],
 		"flint": {
@@ -6992,6 +6996,7 @@
 			"name": "accessorThisRecursion",
 			"plugin": "ts",
 			"preset": "logical",
+			"status": "implemented",
 			"strictness": "strict"
 		},
 		"oxlint": [
@@ -7117,7 +7122,8 @@
 		"flint": {
 			"name": "arguments",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -7447,7 +7453,8 @@
 		"flint": {
 			"name": "arrayIncludes",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -7467,6 +7474,7 @@
 			"name": "arrayIncludesMethods",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		}
 	},
@@ -7487,6 +7495,7 @@
 			"name": "arrayIndexOfMethods",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		},
 		"oxlint": [
@@ -7543,7 +7552,8 @@
 		"flint": {
 			"name": "arrayLoops",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -7736,7 +7746,8 @@
 		"flint": {
 			"name": "arrayTypes",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -8539,6 +8550,7 @@
 			"name": "classMethodsThis",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		}
 	},
@@ -8748,7 +8760,8 @@
 		],
 		"flint": {
 			"name": "consoleCalls",
-			"plugin": "ts"
+			"plugin": "ts",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -8908,7 +8921,8 @@
 		"flint": {
 			"name": "constructorSupers",
 			"plugin": "ts",
-			"preset": "untyped"
+			"preset": "untyped",
+			"status": "implemented"
 		}
 	},
 	{
@@ -9470,6 +9484,7 @@
 			"name": "elseReturns",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		},
 		"oxlint": [
@@ -9553,7 +9568,8 @@
 		"flint": {
 			"name": "emptyEnums",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -9572,7 +9588,8 @@
 		"flint": {
 			"name": "emptyExports",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -9592,6 +9609,7 @@
 			"name": "emptyFiles",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		},
 		"oxlint": [
@@ -9622,6 +9640,7 @@
 			"name": "emptyFunctions",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		},
 		"oxlint": [
@@ -9641,7 +9660,8 @@
 		"flint": {
 			"name": "emptyModuleAttributes",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		}
 	},
 	{
@@ -9674,7 +9694,8 @@
 		"flint": {
 			"name": "emptyObjectTypes",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -9727,7 +9748,8 @@
 		"flint": {
 			"name": "emptyTypeParameterLists",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		}
 	},
 	{
@@ -9759,7 +9781,7 @@
 		"flint": {
 			"name": "enumInitializers",
 			"plugin": "ts",
-			"status": "skipped"
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -9784,7 +9806,9 @@
 		"flint": {
 			"name": "enumMemberLiterals",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"strictness": "strict",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -9822,7 +9846,8 @@
 		"flint": {
 			"name": "enumValueConsistency",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -9841,7 +9866,8 @@
 		"flint": {
 			"name": "enumValueDuplicates",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -9860,7 +9886,7 @@
 		"flint": {
 			"name": "equalityOperatorNegations",
 			"plugin": "ts",
-			"status": "skipped"
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -9918,6 +9944,7 @@
 			"name": "errorMessages",
 			"plugin": "ts",
 			"preset": "logical",
+			"status": "implemented",
 			"strictness": "strict"
 		},
 		"oxlint": [
@@ -9938,6 +9965,7 @@
 			"name": "errorSubclassProperties",
 			"plugin": "ts",
 			"preset": "logical",
+			"status": "implemented",
 			"strictness": "strict"
 		}
 	},
@@ -9951,7 +9979,8 @@
 		"flint": {
 			"name": "errorUnnecessaryCaptureStackTraces",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -9965,6 +9994,7 @@
 			"name": "escapeSequenceCasing",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		},
 		"oxlint": [
@@ -9996,7 +10026,8 @@
 		"flint": {
 			"name": "evals",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -10015,7 +10046,8 @@
 		"flint": {
 			"name": "evolvingVariableTypes",
 			"plugin": "ts",
-			"status": "skipped"
+			"status": "implemented",
+			"strictness": "strict"
 		}
 	},
 	{
@@ -10072,7 +10104,8 @@
 		"flint": {
 			"name": "explicitAnys",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -10097,7 +10130,8 @@
 		"flint": {
 			"name": "exponentiationOperators",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -10141,7 +10175,8 @@
 		"flint": {
 			"name": "exportFromImports",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		}
 	},
 	{
@@ -10192,7 +10227,8 @@
 		"flint": {
 			"name": "exportMutables",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -10211,7 +10247,8 @@
 		"flint": {
 			"name": "exportUniqueNames",
 			"plugin": "ts",
-			"status": "skipped"
+			"preset": "untyped",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -10243,8 +10280,8 @@
 		"flint": {
 			"name": "extraneousClasses",
 			"plugin": "ts",
-			"preset": "logical",
-			"strictness": "strict"
+			"preset": "logicalStrict",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -10397,7 +10434,7 @@
 		"flint": {
 			"name": "forInGuards",
 			"plugin": "ts",
-			"status": "skipped"
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -10468,7 +10505,7 @@
 		"flint": {
 			"name": "functionDeclarationStyles",
 			"plugin": "ts",
-			"status": "skipped"
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -10507,7 +10544,7 @@
 		"flint": {
 			"name": "functionNameMatches",
 			"plugin": "ts",
-			"status": "skipped"
+			"status": "implemented"
 		}
 	},
 	{
@@ -10645,9 +10682,10 @@
 			}
 		],
 		"flint": {
-			"name": "genericConstructorCalls",
+			"name": "constructorGenericCalls",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -10678,7 +10716,8 @@
 		"flint": {
 			"name": "getterReturns",
 			"plugin": "ts",
-			"preset": "untyped"
+			"preset": "untyped",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -10695,9 +10734,10 @@
 			}
 		],
 		"flint": {
-			"name": "getterSetterPairedTypes",
+			"name": "accessorPairTypes",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -10791,6 +10831,7 @@
 			"name": "globalThisAliases",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		},
 		"oxlint": [
@@ -10803,8 +10844,8 @@
 	{
 		"biome": [
 			{
-				"name": "useGroupedAccessorPairs",
-				"url": "https://biomejs.dev/linter/rules/useGroupedAccessorPairs"
+				"name": "useaccessorPairGroups",
+				"url": "https://biomejs.dev/linter/rules/useaccessorPairGroups"
 			}
 		],
 		"eslint": [
@@ -10814,9 +10855,10 @@
 			}
 		],
 		"flint": {
-			"name": "groupedAccessorPairs",
+			"name": "accessorPairGroups",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -10909,7 +10951,8 @@
 		"flint": {
 			"name": "impliedEvals",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -11050,7 +11093,8 @@
 		"flint": {
 			"name": "importEmptyBlocks",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -11183,7 +11227,7 @@
 		"flint": {
 			"name": "importSelf",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "logical"
 		},
 		"oxlint": [
 			{
@@ -11214,7 +11258,9 @@
 		],
 		"flint": {
 			"name": "importTypeSideEffects",
-			"plugin": "ts"
+			"plugin": "ts",
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -11252,7 +11298,8 @@
 		"flint": {
 			"name": "indexedObjectTypes",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -11321,7 +11368,8 @@
 		"flint": {
 			"name": "instanceOfArrays",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"notes": "Only for built-ins with a static .is* (Array).",
 		"oxlint": [
@@ -11394,7 +11442,8 @@
 		"flint": {
 			"name": "isNaNComparisons",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -12235,7 +12284,8 @@
 		"flint": {
 			"name": "literalConstructorWrappers",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		},
 		"notes": "Will apply to all literals, not just bigint"
 	},
@@ -12292,6 +12342,7 @@
 			"name": "mathMethods",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		},
 		"oxlint": [
@@ -12524,7 +12575,8 @@
 		"flint": {
 			"name": "meaninglessVoidOperators",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -12627,7 +12679,8 @@
 		"flint": {
 			"name": "misleadingVoidExpressions",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -12734,7 +12787,8 @@
 		"flint": {
 			"name": "moduleSpecifierLists",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -12800,6 +12854,7 @@
 			"name": "namedDefaultExports",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		},
 		"oxlint": [
@@ -12856,6 +12911,7 @@
 			"name": "namespaceImplicitAmbientImports",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		}
 	},
@@ -12881,7 +12937,8 @@
 		"flint": {
 			"name": "namespaceKeywords",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -12929,7 +12986,8 @@
 		"flint": {
 			"name": "nativeObjectExtensions",
 			"plugin": "ts",
-			"preset": "untyped"
+			"preset": "untyped",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -12949,6 +13007,7 @@
 			"name": "negativeIndexLengthMethods",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		}
 	},
@@ -13008,7 +13067,8 @@
 		"flint": {
 			"name": "nestedStandaloneIfs",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -13043,7 +13103,8 @@
 		"flint": {
 			"name": "newDefinitions",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -13150,7 +13211,8 @@
 		"flint": {
 			"name": "irregularWhitespaces",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -13175,7 +13237,8 @@
 		"flint": {
 			"name": "wrapperObjects",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -13194,7 +13257,8 @@
 		"flint": {
 			"name": "nonNullableTypeAssertions",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -13214,6 +13278,7 @@
 			"name": "nonNullAssertedNullishCoalesces",
 			"plugin": "ts",
 			"preset": "logical",
+			"status": "implemented",
 			"strictness": "strict"
 		},
 		"oxlint": [
@@ -13245,7 +13310,8 @@
 		"flint": {
 			"name": "nonNullAssertedOptionalChains",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -13265,6 +13331,7 @@
 			"name": "nonNullAssertionPlacement",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		},
 		"oxlint": [
@@ -13297,6 +13364,7 @@
 			"name": "nonNullAssertions",
 			"plugin": "ts",
 			"preset": "logical",
+			"status": "implemented",
 			"strictness": "strict"
 		},
 		"oxlint": [
@@ -13400,7 +13468,8 @@
 		"flint": {
 			"name": "numberMethodRanges",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -13429,7 +13498,8 @@
 		"flint": {
 			"name": "numberStaticMethods",
 			"plugin": "ts",
-			"preset": "stylistic",
+			"preset": "logical",
+			"status": "implemented",
 			"strictness": "strict"
 		},
 		"oxlint": [
@@ -13487,7 +13557,8 @@
 		"flint": {
 			"name": "numericErasingOperations",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -13506,9 +13577,9 @@
 		"flint": {
 			"name": "numericLiteralCasing",
 			"plugin": "ts",
-			"preset": "stylistic",
-			"strictness": "strict"
+			"status": "skipped"
 		},
+		"notes": "Formatting rule.",
 		"oxlint": [
 			{
 				"name": "unicorn/number-literal-case",
@@ -13562,7 +13633,8 @@
 		"flint": {
 			"name": "numericPrecision",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -13588,6 +13660,7 @@
 			"name": "numericSeparatorGroups",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		},
 		"oxlint": [
@@ -13613,7 +13686,8 @@
 		"flint": {
 			"name": "objectAssignSpreads",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -13672,6 +13746,7 @@
 			"name": "objectEntriesMethods",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		},
 		"oxlint": [
@@ -13808,7 +13883,8 @@
 		"flint": {
 			"name": "objectShorthand",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		}
 	},
 	{
@@ -13821,7 +13897,8 @@
 		"flint": {
 			"name": "objectSpreadUnnecessaryFallbacks",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -13905,7 +13982,8 @@
 		"flint": {
 			"name": "operatorAssignmentShorthand",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -13968,7 +14046,8 @@
 		"flint": {
 			"name": "overloadSignaturesAdjacent",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -14010,7 +14089,8 @@
 		"flint": {
 			"name": "parameterPropertyAssignment",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -14035,8 +14115,8 @@
 		"flint": {
 			"name": "parameterReassignments",
 			"plugin": "ts",
-			"preset": "stylistic",
-			"strictness": "strict"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -14055,7 +14135,8 @@
 		"flint": {
 			"name": "parseIntRadixes",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -14428,7 +14509,8 @@
 		"flint": {
 			"name": "propertyAccessNotation",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		}
 	},
 	{
@@ -14488,7 +14570,8 @@
 		"flint": {
 			"name": "recursionOnlyArguments",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -14508,6 +14591,7 @@
 			"name": "reduceTypeParameters",
 			"plugin": "ts",
 			"preset": "logical",
+			"status": "implemented",
 			"strictness": "strict"
 		},
 		"oxlint": [
@@ -14527,7 +14611,8 @@
 		"flint": {
 			"name": "redundantTypeConstituents",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -14565,7 +14650,8 @@
 		"flint": {
 			"name": "regexAllGlobalFlags",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -14584,7 +14670,8 @@
 		"flint": {
 			"name": "regexAmbiguousInvalidity",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -14598,6 +14685,7 @@
 			"name": "regexCharacterClasses",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		}
 	},
@@ -14611,7 +14699,8 @@
 		"flint": {
 			"name": "regexCharacterClassRanges",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		}
 	},
 	{
@@ -14624,7 +14713,8 @@
 		"flint": {
 			"name": "regexCharacterClassSetOperations",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		}
 	},
 	{
@@ -14637,7 +14727,8 @@
 		"flint": {
 			"name": "regexConciseCharacterClassNegations",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		}
 	},
 	{
@@ -14695,7 +14786,8 @@
 		"flint": {
 			"name": "regexContradictoryAssertions",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -14708,7 +14800,8 @@
 		"flint": {
 			"name": "regexControlCharacterEscapes",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -14737,7 +14830,8 @@
 		"flint": {
 			"name": "regexControlCharacters",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -14757,6 +14851,7 @@
 			"name": "regexDigitMatchers",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		}
 	},
@@ -14789,7 +14884,8 @@
 		"flint": {
 			"name": "regexDollarEscapes",
 			"plugin": "ts",
-			"preset": "stylistic"
+			"preset": "stylistic",
+			"status": "implemented"
 		}
 	},
 	{
@@ -14802,7 +14898,8 @@
 		"flint": {
 			"name": "regexDuplicateCharacterClassCharacters",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -14828,7 +14925,8 @@
 		"flint": {
 			"name": "regexEmptyAlternatives",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -14841,7 +14939,8 @@
 		"flint": {
 			"name": "regexEmptyCapturingGroups",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -14870,7 +14969,8 @@
 		"flint": {
 			"name": "regexEmptyCharacterClasses",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
@@ -14889,7 +14989,8 @@
 		"flint": {
 			"name": "regexEmptyGroups",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -14902,7 +15003,8 @@
 		"flint": {
 			"name": "regexEmptyLazyQuantifiers",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -14915,7 +15017,8 @@
 		"flint": {
 			"name": "regexEmptyLookaroundsAssertions",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -14928,7 +15031,8 @@
 		"flint": {
 			"name": "regexEmptyStringLiterals",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -14941,7 +15045,8 @@
 		"flint": {
 			"name": "regexEscapeBackspaces",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "stylistic",
+			"status": "implemented"
 		}
 	},
 	{
@@ -14959,6 +15064,7 @@
 			"name": "regexExecutors",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		}
 	},
@@ -14972,7 +15078,8 @@
 		"flint": {
 			"name": "regexGraphemeStringLiterals",
 			"plugin": "ts",
-			"preset": "logical",
+			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		}
 	},
@@ -14987,6 +15094,7 @@
 			"name": "regexHexadecimalEscapes",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		}
 	},
@@ -15000,7 +15108,8 @@
 		"flint": {
 			"name": "regexIgnoreCaseFlags",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -15013,7 +15122,8 @@
 		"flint": {
 			"name": "regexInvisibleCharacters",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -15026,8 +15136,9 @@
 		"flint": {
 			"name": "regexLegacyFeatures",
 			"plugin": "ts",
-			"preset": "logical"
-		}
+			"status": "skipped"
+		},
+		"notes": "Superseded by deprecated."
 	},
 	{
 		"eslint": [
@@ -15040,6 +15151,7 @@
 			"name": "regexLetterCasing",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		}
 	},
@@ -15086,7 +15198,8 @@
 		"flint": {
 			"name": "regexLookaroundQuantifierOptimizations",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -15100,6 +15213,7 @@
 			"name": "regexMatchNotation",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		}
 	},
@@ -15194,6 +15308,7 @@
 			"name": "regexNamedReplacements",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		}
 	},
@@ -15207,7 +15322,8 @@
 		"flint": {
 			"name": "regexNonStandardFlags",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -15233,7 +15349,8 @@
 		"flint": {
 			"name": "regexOctalEscapes",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -15354,6 +15471,7 @@
 			"name": "regexStarQuantifiers",
 			"plugin": "ts",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		}
 	},
@@ -21509,7 +21627,8 @@
 		"flint": {
 			"name": "emptyMappingValues",
 			"plugin": "yaml",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -21522,7 +21641,8 @@
 		"flint": {
 			"name": "emptySequenceEntries",
 			"plugin": "yaml",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
@@ -21576,6 +21696,7 @@
 			"name": "numericTrailingZeros",
 			"plugin": "yaml",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		}
 	},
@@ -21590,6 +21711,7 @@
 			"name": "plainScalars",
 			"plugin": "yaml",
 			"preset": "stylistic",
+			"status": "implemented",
 			"strictness": "strict"
 		}
 	},
@@ -21604,6 +21726,7 @@
 			"name": "stringMappingKeys",
 			"plugin": "yaml",
 			"preset": "logical",
+			"status": "implemented",
 			"strictness": "strict"
 		}
 	}

@@ -1,8 +1,11 @@
+import {
+	type AST,
+	type Checker,
+	getTSNodeRange,
+	typescriptLanguage,
+} from "@flint.fyi/typescript-language";
 import * as ts from "typescript";
 
-import { getTSNodeRange } from "../getTSNodeRange.ts";
-import type { AST, Checker } from "../index.ts";
-import { typescriptLanguage } from "../language.ts";
 import { ruleCreator } from "./ruleCreator.ts";
 
 export default ruleCreator.createRule(typescriptLanguage, {
@@ -35,7 +38,8 @@ export default ruleCreator.createRule(typescriptLanguage, {
 						return;
 					}
 
-					const arrayText = node.expression.expression.getText(sourceFile);
+					const arrayText =
+						node.expression.expression.expression.getText(sourceFile);
 					const filterArgumentsText = node.expression.arguments
 						.map((arg) => arg.getText(sourceFile))
 						.join(", ");

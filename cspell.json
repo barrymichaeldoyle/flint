@@ -11,8 +11,10 @@
 		"pnpm-lock.yaml"
 	],
 	"words": [
+		"aeiou",
 		"affordances",
 		"Amiel",
+		"Anys",
 		"aria-activedescendant",
 		"aria-colcount",
 		"aria-colindex",
@@ -42,8 +44,10 @@
 		"contentinfo",
 		"deoptimizations",
 		"destructures",
+		"dgimsuyv",
 		"dirents",
 		"dustinspecker",
+		"evals",
 		"extlang",
 		"Fallthroughs",
 		"Focusables",
@@ -52,9 +56,13 @@
 		"joshuakgoldberg",
 		"kirkwaiblinger",
 		"lishaduck",
+		"lookaheads",
+		"lookarounds",
 		"mdast",
 		"menuitemcheckbox",
 		"menuitemradio",
+		"Mintlify",
+		"Mutables",
 		"nord",
 		"oxendict",
 		"Oxlint",
@@ -72,9 +80,11 @@
 		"thenables",
 		"treegrid",
 		"tsgolint",
+		"twoslash",
 		"typelang",
 		"Waiblinger",
 		"webauthn",
-		"WHATWG"
+		"WHATWG",
+		"xobi"
 	]
 }

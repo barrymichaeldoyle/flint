@@ -1,6 +1,5 @@
+import { yamlLanguage } from "@flint.fyi/yaml-language";
 import type * as yamlParser from "yaml-unist-parser";
-
-import { yamlLanguage } from "../language.ts";
 
 function buildBlockSequenceFix(
 	node: yamlParser.FlowSequence,
@@ -74,10 +73,17 @@ export default ruleCreator.createRule(yamlLanguage, {
 				flowSequence: (node, services) => {
 					const fixText = buildBlockSequenceFix(node, services.sourceText);
 
+					const sourceText = services.sourceText;
+					let fixBegin = node.position.start.offset;
+
+					while (fixBegin > 0 && sourceText[fixBegin - 1] === " ") {
+						fixBegin--;
+					}
+
 					context.report({
 						fix: {
 							range: {
-								begin: node.position.start.offset,
+								begin: fixBegin,
 								end: node.position.end.offset,
 							},
 							text: fixText,

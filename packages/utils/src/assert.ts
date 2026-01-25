@@ -2,7 +2,10 @@ export class FlintAssertionError extends Error {
 	constructor(message: string) {
 		super(`Flint bug: ${message}.`);
 		const issueUrl = buildIssueUrl(message, this.stack);
+		// The message uses this.stack, which isn't available before super()
+		// flint-disable-next-line errorSubclassProperties
 		this.message = `Flint bug: ${message}. Please report it here: ${issueUrl}`;
+		this.name = "FlintAssertionError";
 		if (this.stack) {
 			const [, ...rest] = this.stack.split("\n");
 			this.stack = [`FlintAssertionError: ${this.message}`, ...rest].join("\n");
@@ -21,7 +24,7 @@ export function nullThrows<T>(x: T, message: string): NonNullable<T> {
 	return x;
 }
 export function sanitizeStackTrace(stack: string): string {
-	const pathRegex = /(?:[A-Z]:\\|\/)[^:\s)]+:\d+(?::\d+)?/gi;
+	const pathRegex = /(?:[a-z]:\\|\/)[^:\s)]+:\d+(?::\d+)?/gi;
 	return stack.replace(pathRegex, (match) => {
 		const normalized = match.replace(/\\/g, "/");
 		const nodeModulesIndex = normalized.lastIndexOf("node_modules/");
