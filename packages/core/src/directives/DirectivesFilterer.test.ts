@@ -553,5 +553,134 @@ describe(DirectivesFilterer, () => {
 				unusedDirectives: [unusedBeginDirective, unusedEndDirective],
 			});
 		});
+
+		it("only marks directives in the matching range as used when multiple blocks have the same selection", () => {
+			const filterer = new DirectivesFilterer();
+
+			// First block - should be marked as used (suppresses the report)
+			const usedBeginDirective = {
+				range: {
+					begin: {
+						column: 0,
+						line: 0,
+						raw: 0,
+					},
+					end: {
+						column: 0,
+						line: 0,
+						raw: 0,
+					},
+				},
+				selections: ["example"],
+				type: "disable-lines-begin" as const,
+			};
+
+			const usedEndDirective = {
+				range: {
+					begin: {
+						column: 0,
+						line: 5,
+						raw: 5,
+					},
+					end: {
+						column: 0,
+						line: 5,
+						raw: 5,
+					},
+				},
+				selections: ["example"],
+				type: "disable-lines-end" as const,
+			};
+
+			// Second block with SAME selection - should NOT be marked as used
+			// because no reports fall within its range
+			const unusedBeginDirective = {
+				range: {
+					begin: {
+						column: 0,
+						line: 10,
+						raw: 10,
+					},
+					end: {
+						column: 0,
+						line: 10,
+						raw: 10,
+					},
+				},
+				selections: ["example"],
+				type: "disable-lines-begin" as const,
+			};
+
+			const unusedEndDirective = {
+				range: {
+					begin: {
+						column: 0,
+						line: 15,
+						raw: 15,
+					},
+					end: {
+						column: 0,
+						line: 15,
+						raw: 15,
+					},
+				},
+				selections: ["example"],
+				type: "disable-lines-end" as const,
+			};
+
+			filterer.add([
+				usedBeginDirective,
+				usedEndDirective,
+				unusedBeginDirective,
+				unusedEndDirective,
+			]);
+
+			// Report at line 3 is only in the first block's range (1-5),
+			// not in the second block's range (11-15)
+			const reports = [createReport(3, "example")];
+
+			const actual = filterer.filter(reports);
+
+			expect(actual).toEqual({
+				reports: [],
+				unusedDirectives: [unusedBeginDirective, unusedEndDirective],
+			});
+		});
+
+		it("marks disable-next-line as used only when report is on its target line", () => {
+			const filterer = new DirectivesFilterer();
+
+			// disable-next-line at line 3, covers only line 4
+			const usedNextLine = {
+				range: {
+					begin: { column: 0, line: 3, raw: 3 },
+					end: { column: 0, line: 3, raw: 3 },
+				},
+				selections: ["example"],
+				type: "disable-next-line" as const,
+			};
+
+			// disable-next-line at line 10, covers only line 11
+			const unusedNextLine = {
+				range: {
+					begin: { column: 0, line: 10, raw: 10 },
+					end: { column: 0, line: 10, raw: 10 },
+				},
+				selections: ["example"],
+				type: "disable-next-line" as const,
+			};
+
+			filterer.add([usedNextLine, unusedNextLine]);
+
+			// Report at line 4 - matches usedNextLine's target, not unusedNextLine's
+			const reports = [createReport(4, "example")];
+
+			const actual = filterer.filter(reports);
+
+			expect(actual).toEqual({
+				reports: [],
+				unusedDirectives: [unusedNextLine],
+			});
+		});
 	});
 });
