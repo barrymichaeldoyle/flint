@@ -15,6 +15,7 @@
 	"sideEffects": false,
 	"type": "module",
 	"scripts": {
+		"flint": "flint",
 		"test": "vitest --typecheck --project e2e"
 	},
 	"devDependencies": {

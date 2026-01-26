@@ -1,20 +1,33 @@
 import { execa } from "execa";
+import path from "node:path";
 import { describe, expect, it } from "vitest";
 
+const e2eRoot = path.join(import.meta.dirname, "..");
+
+function normalizeOutput(stdout: string): string {
+	return stdout.replaceAll(e2eRoot, "<cwd>");
+}
+
 describe("cspell", () => {
-	// TODO: Assert that there's a typo when running flint on typo.md
-
-	it("should find a typo", async () => {
-		const { stdout } = await execa({
-			cwd: "./packages/e2e/fixtures/cspell",
+	it("should find a typo in with_typo.md", async () => {
+		const { exitCode, stdout } = await execa({
+			cwd: e2eRoot,
+			reject: false,
 		})`pnpm flint`;
-		expect({ stdout }).toMatchSnapshot();
-		expect({ stdout }).toMatchInlineSnapshot();
-	});
 
-	// // TODO: Assert that there's no typo when running flint on no_typo.md
-	// it("should not find a typo", () => {
-	// 	const result = runFlint("no_typo.md");
-	// 	expect(result).not.toContain("typo");
-	// });
+		expect(exitCode).toBe(1);
+		expect(normalizeOutput(stdout)).toMatchInlineSnapshot(`
+			"
+			> @flint.fyi/e2e@0.19.0 flint <cwd>
+			> flint
+
+			Linting with flint.config.ts...
+
+			<cwd>/fixtures/cspell/without_typo.md
+			  1:26  Forbidden or unknown word: "incorectly".  cspell
+
+			✖ Found 1 report across 1 file.
+			 ELIFECYCLE  Command failed with exit code 1."
+		`);
+	});
 });

@@ -1,10 +1,10 @@
 import { spelling } from "@flint.fyi/spelling";
-import { defineConfig, globs } from "flint";
+import { defineConfig } from "flint";
 
 export default defineConfig({
 	use: [
 		{
-			files: globs.all,
+			files: "fixtures/**/*.md",
 			rules: spelling.presets.logical,
 		},
 	],
