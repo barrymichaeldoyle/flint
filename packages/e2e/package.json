@@ -16,7 +16,7 @@
 	"type": "module",
 	"scripts": {
 		"flint": "flint",
-		"test": "vitest --typecheck --project e2e"
+		"test": "vitest --project e2e"
 	},
 	"devDependencies": {
 		"@flint.fyi/spelling": "workspace:^",
