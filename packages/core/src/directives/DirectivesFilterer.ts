@@ -66,8 +66,10 @@ export class DirectivesFilterer {
 						for (const directive of this.#directivesForRanges) {
 							const directiveLine = directive.range.begin.line;
 
-							const hasMatchingSelection = directive.selections.some((sel) =>
-								range.selections.some((rangeSel) => rangeSel.test(sel)),
+							const hasMatchingSelection = directive.selections.some(
+								(selection) =>
+									range.selections.some((rangeSel) => rangeSel.test(selection)),
+
 							);
 
 							if (!hasMatchingSelection) {
