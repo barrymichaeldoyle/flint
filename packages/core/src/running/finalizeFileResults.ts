@@ -60,9 +60,9 @@ export function finalizeFileResults(
 	}
 
 	const directiveReportsFromCollector: FileReport[] = [];
-	for (const { fileMetadata } of languageAndFilesMetadata) {
-		if (fileMetadata.reports) {
-			directiveReportsFromCollector.push(...fileMetadata.reports);
+	for (const { file } of languageAndFiles) {
+		if (file.reports) {
+			directiveReportsFromCollector.push(...file.reports);
 		}
 	}
 
