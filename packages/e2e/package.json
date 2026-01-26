@@ -1,0 +1,30 @@
+{
+	"name": "@flint.fyi/e2e",
+	"version": "0.19.0",
+	"description": "Flint E2E tests",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/flint-fyi/flint.git",
+		"directory": "packages/e2e"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "JoshuaKGoldberg",
+		"email": "npm@joshuakgoldberg.com"
+	},
+	"sideEffects": false,
+	"type": "module",
+	"scripts": {
+		"test": "vitest --typecheck --project e2e"
+	},
+	"devDependencies": {
+		"@flint.fyi/spelling": "workspace:^",
+		"execa": "9.6.1",
+		"flint": "workspace:^",
+		"tsdown": "0.19.0-beta.2",
+		"vitest": "4.0.15"
+	},
+	"engines": {
+		"node": ">=24.0.0"
+	}
+}

@@ -11,7 +11,7 @@ export default defineConfig({
 				},
 				test: {
 					clearMocks: true,
-					include: ["**/src/**/*.test.ts"],
+					include: ["**/src/**/*.test.ts", "**/tests/*.test.ts"],
 					name,
 					root: path.join(import.meta.dirname, "packages", name),
 					setupFiles: [

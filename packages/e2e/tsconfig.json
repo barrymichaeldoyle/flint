@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"tsBuildInfoFile": "node_modules/.cache/tsbuild/info.test.json",
+		"rootDir": "tests",
+		"outDir": "node_modules/.cache/tsbuild/test",
+		"types": ["node"]
+	},
+	"extends": "../../tsconfig.base.json",
+	"include": ["tests"]
+}
