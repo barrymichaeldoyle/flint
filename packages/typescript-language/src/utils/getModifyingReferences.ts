@@ -54,7 +54,7 @@ export function getModifyingReferences(
 	function visit(node: ts.Node): void {
 		// Check if this is an identifier that refers to the same symbol
 		if (isIdentifierForSameSymbol(node as AST.AnyNode)) {
-			modifyingReferences.push(node);
+			modifyingReferences.push(node as AST.Identifier);
 		}
 
 		ts.forEachChild(node, visit);
