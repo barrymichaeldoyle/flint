@@ -93,7 +93,7 @@ export default ruleCreator.createRule(typescriptLanguage, {
 	about: {
 		description: "Reports control characters in regular expressions.",
 		id: "regexControlCharacters",
-		presets: ["logical"],
+		presets: ["logical", "logicalStrict"],
 	},
 	messages: {
 		unexpectedControlChar: {

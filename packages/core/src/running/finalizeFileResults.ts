@@ -27,7 +27,7 @@ export function finalizeFileResults(
 
 	for (const { file, language } of languageAndFiles) {
 		if (file.directives) {
-			log("Adding %d directives for file %s", file.directives, filePath);
+			log("Adding %d directives for file %s", file.directives.length, filePath);
 			directivesFilterer.add(file.directives);
 		}
 
@@ -42,20 +42,18 @@ export function finalizeFileResults(
 			}
 		}
 
-		if (!skipDiagnostics) {
-			if (language.getFileDiagnostics) {
-				log(
-					"Retrieving language %s diagnostics for file %s",
-					language.about.name,
-					filePath,
-				);
-				fileDiagnostics.push(...language.getFileDiagnostics(file));
-				log(
-					"Retrieved language %s diagnostics for file %s",
-					language.about.name,
-					filePath,
-				);
-			}
+		if (!skipDiagnostics && language.getFileDiagnostics) {
+			log(
+				"Retrieving language %s diagnostics for file %s",
+				language.about.name,
+				filePath,
+			);
+			fileDiagnostics.push(...language.getFileDiagnostics(file));
+			log(
+				"Retrieved language %s diagnostics for file %s",
+				language.about.name,
+				filePath,
+			);
 		}
 	}
 
