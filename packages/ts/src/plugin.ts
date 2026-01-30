@@ -230,6 +230,7 @@ import regexUnnecessaryCharacterRanges from "./rules/regexUnnecessaryCharacterRa
 import regexUnnecessaryDisjunctions from "./rules/regexUnnecessaryDisjunctions.ts";
 import regexUnnecessaryDollarReplacements from "./rules/regexUnnecessaryDollarReplacements.ts";
 import regexUnnecessaryEscapes from "./rules/regexUnnecessaryEscapes.ts";
+import regexUnnecessaryLookaroundAssertions from "./rules/regexUnnecessaryLookaroundAssertions.ts";
 import regexUnnecessaryNonCapturingGroups from "./rules/regexUnnecessaryNonCapturingGroups.ts";
 import regexUnnecessaryOptionalAssertions from "./rules/regexUnnecessaryOptionalAssertions.ts";
 import regexUnusedCapturingGroups from "./rules/regexUnusedCapturingGroups.ts";
@@ -498,7 +499,6 @@ export const ts = createPlugin({
 		regexUnicodeCodepointEscapes,
 		regexUnicodeEscapes,
 		regexUnicodeFlag,
-		regexUnnecessaryOptionalAssertions,
 		regexUnicodeProperties,
 		regexUnnecessaryAssertions,
 		regexUnnecessaryBackreferences,
@@ -507,7 +507,9 @@ export const ts = createPlugin({
 		regexUnnecessaryDisjunctions,
 		regexUnnecessaryDollarReplacements,
 		regexUnnecessaryEscapes,
+		regexUnnecessaryLookaroundAssertions,
 		regexUnnecessaryNonCapturingGroups,
+		regexUnnecessaryOptionalAssertions,
 		regexUnusedCapturingGroups,
 		regexUnusedLazyQuantifiers,
 		regexUnusedQuantifiers,
