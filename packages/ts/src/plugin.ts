@@ -245,6 +245,7 @@ import sizeComparisonOperators from "./rules/sizeComparisonOperators.ts";
 import sparseArrays from "./rules/sparseArrays.ts";
 import staticMemberOnlyClasses from "./rules/staticMemberOnlyClasses.ts";
 import stringCaseMismatches from "./rules/stringCaseMismatches.ts";
+import stringCodePoints from "./rules/stringCodePoints.ts";
 import symbolDescriptions from "./rules/symbolDescriptions.ts";
 import thisAliases from "./rules/thisAliases.ts";
 import topLevelAwaits from "./rules/topLevelAwaits.ts";
@@ -515,6 +516,7 @@ export const ts = createPlugin({
 		singleVariableDeclarations,
 		sizeComparisonOperators,
 		sparseArrays,
+		stringCodePoints,
 		staticMemberOnlyClasses,
 		stringCaseMismatches,
 		symbolDescriptions,
