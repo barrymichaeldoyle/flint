@@ -311,27 +311,53 @@ export default ruleCreator.createRule(typescriptLanguage, {
 	messages: {
 		endAnchor: {
 			primary:
-				"The end anchor '$' always rejects because it is not at the end of the pattern.",
-			secondary: [],
-			suggestions: [],
+				"The end anchor `$` always rejects because it is not at the end of the pattern.",
+			secondary: [
+				"Without the `m` (multiline) flag, `$` can only match at the very end of the input string.",
+				"Characters after `$` mean the pattern can never match.",
+			],
+			suggestions: [
+				"Remove the `$` anchor.",
+				"Move the `$` to the end of the pattern.",
+				"Add the `m` flag if you want `$` to match at line endings.",
+			],
 		},
 		negatedWordBoundary: {
 			primary:
-				"The negated word boundary '\\B' always rejects because there is a word/non-word transition.",
-			secondary: [],
-			suggestions: [],
+				"The negated word boundary `\\B` always rejects because there is a word/non-word transition.",
+			secondary: [
+				"`\\B` asserts that the position is NOT at a word boundary.",
+				"However, the surrounding characters already create a word/non-word transition, which is a word boundary.",
+			],
+			suggestions: [
+				"Remove the `\\B` assertion.",
+				"Use `\\b` if you intended to match a word boundary.",
+			],
 		},
 		startAnchor: {
 			primary:
-				"The start anchor '^' always rejects because it is not at the start of the pattern.",
-			secondary: [],
-			suggestions: [],
+				"The start anchor `^` always rejects because it is not at the start of the pattern.",
+			secondary: [
+				"Without the `m` (multiline) flag, `^` can only match at the very beginning of the input string.",
+				"Characters before `^` mean the pattern can never match.",
+			],
+			suggestions: [
+				"Remove the `^` anchor.",
+				"Move the `^` to the start of the pattern.",
+				"Add the `m` flag if you want `^` to match at line beginnings.",
+			],
 		},
 		wordBoundary: {
 			primary:
-				"The word boundary '\\b' always rejects because both sides are {{ type }} characters.",
-			secondary: [],
-			suggestions: [],
+				"The word boundary `\\b` always rejects because both sides are {{ type }} characters.",
+			secondary: [
+				"`\\b` asserts that the position is at a word boundary (between a word and non-word character).",
+				"Since both adjacent characters are {{ type }} characters, there is no boundary here.",
+			],
+			suggestions: [
+				"Remove the `\\b` assertion.",
+				"Use `\\B` if you intended to match inside a word.",
+			],
 		},
 	},
 	setup(context) {

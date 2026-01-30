@@ -10,7 +10,7 @@ ruleTester.describe(rule, {
 			snapshot: `
 /a\\bb/;
   ~~
-  The word boundary '\\b' always rejects because both sides are word characters.
+  The word boundary \`\\b\` always rejects because both sides are word characters.
 `,
 		},
 		{
@@ -20,7 +20,7 @@ ruleTester.describe(rule, {
 			snapshot: `
 /-\\b-/;
   ~~
-  The word boundary '\\b' always rejects because both sides are non-word characters.
+  The word boundary \`\\b\` always rejects because both sides are non-word characters.
 `,
 		},
 		{
@@ -30,7 +30,7 @@ ruleTester.describe(rule, {
 			snapshot: `
 /a\\B-/;
   ~~
-  The negated word boundary '\\B' always rejects because there is a word/non-word transition.
+  The negated word boundary \`\\B\` always rejects because there is a word/non-word transition.
 `,
 		},
 		{
@@ -40,7 +40,7 @@ ruleTester.describe(rule, {
 			snapshot: `
 /-\\Ba/;
   ~~
-  The negated word boundary '\\B' always rejects because there is a word/non-word transition.
+  The negated word boundary \`\\B\` always rejects because there is a word/non-word transition.
 `,
 		},
 		{
@@ -50,7 +50,7 @@ ruleTester.describe(rule, {
 			snapshot: `
 /a^b/;
   ~
-  The start anchor '^' always rejects because it is not at the start of the pattern.
+  The start anchor \`^\` always rejects because it is not at the start of the pattern.
 `,
 		},
 		{
@@ -60,7 +60,7 @@ ruleTester.describe(rule, {
 			snapshot: `
 /a$b/;
   ~
-  The end anchor '$' always rejects because it is not at the end of the pattern.
+  The end anchor \`$\` always rejects because it is not at the end of the pattern.
 `,
 		},
 		{
@@ -70,7 +70,7 @@ new RegExp("a\\\\bb");
 			snapshot: `
 new RegExp("a\\\\bb");
              ~~~
-             The word boundary '\\b' always rejects because both sides are word characters.
+             The word boundary \`\\b\` always rejects because both sides are word characters.
 `,
 		},
 		{
@@ -80,7 +80,7 @@ new RegExp("-\\\\b-");
 			snapshot: `
 new RegExp("-\\\\b-");
              ~~~
-             The word boundary '\\b' always rejects because both sides are non-word characters.
+             The word boundary \`\\b\` always rejects because both sides are non-word characters.
 `,
 		},
 		{
@@ -90,7 +90,7 @@ new RegExp("a\\\\B-");
 			snapshot: `
 new RegExp("a\\\\B-");
              ~~~
-             The negated word boundary '\\B' always rejects because there is a word/non-word transition.
+             The negated word boundary \`\\B\` always rejects because there is a word/non-word transition.
 `,
 		},
 		{
@@ -100,7 +100,7 @@ new RegExp("a^b");
 			snapshot: `
 new RegExp("a^b");
              ~
-             The start anchor '^' always rejects because it is not at the start of the pattern.
+             The start anchor \`^\` always rejects because it is not at the start of the pattern.
 `,
 		},
 		{
@@ -110,7 +110,7 @@ new RegExp("a$b");
 			snapshot: `
 new RegExp("a$b");
              ~
-             The end anchor '$' always rejects because it is not at the end of the pattern.
+             The end anchor \`$\` always rejects because it is not at the end of the pattern.
 `,
 		},
 	],
