@@ -245,6 +245,7 @@ import sparseArrays from "./rules/sparseArrays.ts";
 import staticMemberOnlyClasses from "./rules/staticMemberOnlyClasses.ts";
 import stringCaseMismatches from "./rules/stringCaseMismatches.ts";
 import symbolDescriptions from "./rules/symbolDescriptions.ts";
+import thisAliases from "./rules/thisAliases.ts";
 import topLevelAwaits from "./rules/topLevelAwaits.ts";
 import tripleSlashReferences from "./rules/tripleSlashReferences.ts";
 import tripleSlashReferenceValidity from "./rules/tripleSlashReferenceValidity.ts";
@@ -515,12 +516,13 @@ export const ts = createPlugin({
 		staticMemberOnlyClasses,
 		stringCaseMismatches,
 		symbolDescriptions,
+		thisAliases,
 		topLevelAwaits,
 		tripleSlashReferences,
+		tripleSlashReferenceValidity,
 		tsComments,
 		tslintComments,
 		typeofComparisons,
-		tripleSlashReferenceValidity,
 		unassignedVariables,
 		undefinedVariables,
 		unicodeBOMs,
