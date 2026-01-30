@@ -16469,7 +16469,8 @@
 		"flint": {
 			"name": "singleVariableDeclarations",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{

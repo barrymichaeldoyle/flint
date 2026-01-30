@@ -230,6 +230,7 @@ import returnAssignments from "./rules/returnAssignments.ts";
 import selfAssignments from "./rules/selfAssignments.ts";
 import sequences from "./rules/sequences.ts";
 import shadowedRestrictedNames from "./rules/shadowedRestrictedNames.ts";
+import singleVariableDeclarations from "./rules/singleVariableDeclarations.ts";
 import sparseArrays from "./rules/sparseArrays.ts";
 import symbolDescriptions from "./rules/symbolDescriptions.ts";
 import tslintComments from "./rules/tslintComments.ts";
@@ -483,6 +484,7 @@ export const ts = createPlugin({
 		selfAssignments,
 		sequences,
 		shadowedRestrictedNames,
+		singleVariableDeclarations,
 		sparseArrays,
 		symbolDescriptions,
 		tslintComments,
