@@ -243,6 +243,7 @@ import singleVariableDeclarations from "./rules/singleVariableDeclarations.ts";
 import sizeComparisonOperators from "./rules/sizeComparisonOperators.ts";
 import sparseArrays from "./rules/sparseArrays.ts";
 import staticMemberOnlyClasses from "./rules/staticMemberOnlyClasses.ts";
+import stringCaseMismatches from "./rules/stringCaseMismatches.ts";
 import symbolDescriptions from "./rules/symbolDescriptions.ts";
 import topLevelAwaits from "./rules/topLevelAwaits.ts";
 import tripleSlashReferences from "./rules/tripleSlashReferences.ts";
@@ -512,6 +513,7 @@ export const ts = createPlugin({
 		sizeComparisonOperators,
 		sparseArrays,
 		staticMemberOnlyClasses,
+		stringCaseMismatches,
 		symbolDescriptions,
 		topLevelAwaits,
 		tripleSlashReferences,

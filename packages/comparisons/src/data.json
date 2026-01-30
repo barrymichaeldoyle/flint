@@ -16616,7 +16616,8 @@
 		"flint": {
 			"name": "stringCaseMismatches",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
