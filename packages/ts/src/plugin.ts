@@ -239,6 +239,7 @@ import shadowedRestrictedNames from "./rules/shadowedRestrictedNames.ts";
 import singleVariableDeclarations from "./rules/singleVariableDeclarations.ts";
 import sparseArrays from "./rules/sparseArrays.ts";
 import symbolDescriptions from "./rules/symbolDescriptions.ts";
+import topLevelAwaits from "./rules/topLevelAwaits.ts";
 import tsComments from "./rules/tsComments.ts";
 import tslintComments from "./rules/tslintComments.ts";
 import typeofComparisons from "./rules/typeofComparisons.ts";
@@ -500,6 +501,7 @@ export const ts = createPlugin({
 		singleVariableDeclarations,
 		sparseArrays,
 		symbolDescriptions,
+		topLevelAwaits,
 		tsComments,
 		tslintComments,
 		typeofComparisons,
