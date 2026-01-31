@@ -235,6 +235,7 @@ import regexUnnecessaryNestedAssertions from "./rules/regexUnnecessaryNestedAsse
 import regexUnnecessaryNonCapturingGroups from "./rules/regexUnnecessaryNonCapturingGroups.ts";
 import regexUnnecessaryNumericQuantifiers from "./rules/regexUnnecessaryNumericQuantifiers.ts";
 import regexUnnecessaryOptionalAssertions from "./rules/regexUnnecessaryOptionalAssertions.ts";
+import regexUnnecessaryReferentialBackreferences from "./rules/regexUnnecessaryReferentialBackreferences.ts";
 import regexUnusedCapturingGroups from "./rules/regexUnusedCapturingGroups.ts";
 import regexUnusedFlags from "./rules/regexUnusedFlags.ts";
 import regexUnusedLazyQuantifiers from "./rules/regexUnusedLazyQuantifiers.ts";
@@ -314,6 +315,7 @@ export const ts = createPlugin({
 		arrayMapIdentities,
 		arrayMutableReverses,
 		arrayMutableSorts,
+		arrayReduceTypeArguments,
 		arraySliceUnnecessaryEnd,
 		arraySomeMethods,
 		arrayTernarySpreadingConsistency,
@@ -454,7 +456,6 @@ export const ts = createPlugin({
 		parseIntRadixes,
 		propertyAccessNotation,
 		recursionOnlyArguments,
-		arrayReduceTypeArguments,
 		redundantTypeConstituents,
 		regexAllGlobalFlags,
 		regexAmbiguousInvalidity,
@@ -522,6 +523,7 @@ export const ts = createPlugin({
 		regexUnnecessaryNonCapturingGroups,
 		regexUnnecessaryNumericQuantifiers,
 		regexUnnecessaryOptionalAssertions,
+		regexUnnecessaryReferentialBackreferences,
 		regexUnusedCapturingGroups,
 		regexUnusedFlags,
 		regexUnusedLazyQuantifiers,
