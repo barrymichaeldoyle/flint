@@ -15973,7 +15973,8 @@
 		"flint": {
 			"name": "regexZeroQuantifiers",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "logical",
+			"status": "implemented"
 		}
 	},
 	{
