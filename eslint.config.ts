@@ -51,6 +51,7 @@ export default defineConfig(
 		"packages/*/dist",
 		"packages/*/lib",
 		"packages/fixtures",
+		"packages/e2e/tests/**/fixtures/**",
 		"pnpm-lock.yaml",
 	]),
 	{ linterOptions: { reportUnusedDisableDirectives: "error" } },
@@ -185,6 +186,14 @@ export default defineConfig(
 		files: ["**/*.test.*"],
 		rules: { "@typescript-eslint/no-unsafe-assignment": "off" },
 		settings: { vitest: { typecheck: true } },
+	},
+	// E2E tests and configs live next to fixture package.json (no vitest/execa/@flint.fyi/ts); allow packages/e2e devDependencies
+	{
+		files: ["packages/e2e/tests/**/*.ts"],
+		rules: {
+			"n/no-extraneous-import": "off",
+			"n/no-unpublished-import": "off",
+		},
 	},
 	{
 		extends: [

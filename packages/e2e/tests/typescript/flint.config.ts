@@ -1,5 +1,5 @@
-import { defineConfig } from "flint";
 import { ts } from "@flint.fyi/ts";
+import { defineConfig } from "flint";
 
 export default defineConfig({
 	use: [

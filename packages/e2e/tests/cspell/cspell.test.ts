@@ -1,8 +1,10 @@
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
 
 import { normalizeOutput, runFlint } from "../utils.ts";
 
-const cwd = import.meta.dirname;
+const cwd = path.dirname(fileURLToPath(import.meta.url));
 
 describe("cspell", () => {
 	it("should find spelling errors across multiple file types", async () => {

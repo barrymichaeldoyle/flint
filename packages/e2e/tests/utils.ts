@@ -2,7 +2,7 @@ import { execa } from "execa";
 
 /**
  * Normalizes CLI output for snapshot testing: converts backslashes to forward
- * slashes and replaces the given cwd with `<cwd>` so snapshots are portable.
+ * slashes and replaces the given cwd with `&lt;cwd&gt;` so snapshots are portable.
  */
 export function normalizeOutput(stdout: string, cwd: string): string {
 	const normalizedCwd = cwd.replace(/\\/g, "/");
