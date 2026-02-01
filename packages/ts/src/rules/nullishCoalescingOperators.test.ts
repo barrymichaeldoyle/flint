@@ -259,88 +259,131 @@ const result = !value ? "default" : value;
                Prefer nullish coalescing operator (\`??\`) over ternary expression for nullish checks.
 `,
 		},
-	],
-	valid: [
 		{
 			code: `
+declare const values: Set<string> | undefined;
+function emptiness() {
+    return values !== undefined ? values.has("") : true;
+}
+`,
+			output: `
+declare const values: Set<string> | undefined;
+function emptiness() {
+    return values?.has("") ?? true;
+}
+`,
+			snapshot: `
+declare const values: Set<string> | undefined;
+function emptiness() {
+    return values !== undefined ? values.has("") : true;
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+           Prefer nullish coalescing operator (\`??\`) over ternary expression for nullish checks.
+}
+`,
+		},
+		{
+			code: `
+declare const obj: { key: string } | undefined;
+const result = obj !== undefined ? obj["key"] : "default";
+`,
+			output: `
+declare const obj: { key: string } | undefined;
+const result = obj?.["key"] ?? "default";
+`,
+			snapshot: `
+declare const obj: { key: string } | undefined;
+const result = obj !== undefined ? obj["key"] : "default";
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+               Prefer nullish coalescing operator (\`??\`) over ternary expression for nullish checks.
+`,
+		},
+		{
+			code: `
+declare const obj: { nested: { value: number } } | null;
+const result = obj !== null ? obj.nested.value : 0;
+`,
+			output: `
+declare const obj: { nested: { value: number } } | null;
+const result = obj?.nested.value ?? 0;
+`,
+			snapshot: `
+declare const obj: { nested: { value: number } } | null;
+const result = obj !== null ? obj.nested.value : 0;
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+               Prefer nullish coalescing operator (\`??\`) over ternary expression for nullish checks.
+`,
+		},
+		{
+			code: `
+declare const arr: number[] | undefined;
+const result = arr !== undefined ? arr.map(x => x * 2).filter(x => x > 0) : [];
+`,
+			output: `
+declare const arr: number[] | undefined;
+const result = arr?.map(x => x * 2).filter(x => x > 0) ?? [];
+`,
+			snapshot: `
+declare const arr: number[] | undefined;
+const result = arr !== undefined ? arr.map(x => x * 2).filter(x => x > 0) : [];
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+               Prefer nullish coalescing operator (\`??\`) over ternary expression for nullish checks.
+`,
+		},
+	],
+	valid: [
+		`
 let value: string = "";
 const result = value || "default";
 `,
-		},
-		{
-			code: `
+		`
 let value: number = 0;
 const result = value || 1;
 `,
-		},
-		{
-			code: `
+		`
 let value: boolean = false;
 const result = value || true;
 `,
-		},
-		{
-			code: `
+		`
 let value = "text";
 const result = value || "default";
 `,
-		},
-		{
-			code: `
+		`
 let value: string | null = null;
 const result = value ?? "default";
 `,
-		},
-		{
-			code: `
+		`
 declare const value: 0 | null;
 const result = value || 1;
 `,
-		},
-		{
-			code: `
+		`
 declare const value: "" | undefined;
 const result = value || "default";
 `,
-		},
-		{
-			code: `
+		`
 declare const value: false | null;
 const result = value || true;
 `,
-		},
-		{
-			code: `
+		`
 declare const value: 0n | undefined;
 const result = value || 1n;
 `,
-		},
-		{
-			code: `
+		`
 let value: any = null;
 const result = value || "default";
 `,
-		},
-		{
-			code: `
+		`
 let value: unknown = null;
 const result = value || "default";
 `,
-		},
-		{
-			code: `
+		`
 let value: string = "test";
 const result = value ? value : "default";
 `,
-		},
-		{
-			code: `
+		`
 declare let x: string | boolean;
 const result = x ? x : "default";
 `,
-		},
-		{
-			code: `
+		`
 let foo: string | null = null;
 function test() {
   if (!foo) {
@@ -350,12 +393,13 @@ function test() {
   }
 }
 `,
-		},
-		{
-			code: `
+		`
 let obj = { value: "test" };
 const result = obj.value || "default";
 `,
-		},
+		`
+declare const baseHost: string[] | null;
+console.log(baseHost == null ? { cwd: process.cwd() } : { baseHost });
+`,
 	],
 });
