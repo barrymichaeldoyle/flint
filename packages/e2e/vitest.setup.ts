@@ -1,4 +1,4 @@
-import { expect, SnapshotSerializer } from "vitest";
+import { expect, type SnapshotSerializer } from "vitest";
 import ansiSerializer from "vitest-ansi-serializer";
 
 // Map ANSI color codes to readable names
