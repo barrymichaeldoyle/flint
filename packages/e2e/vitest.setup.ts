@@ -36,7 +36,10 @@ const colorCodes: Record<string, string> = {
 	"49": "/bg",
 };
 
+// flint-disable-lines-begin regexControlCharacters
+// eslint-disable-next-line no-control-regex -- ANSI escape sequences start with ESC (\x1b)
 const colorPattern = /\x1b\[(\d+)m/g;
+// flint-disable-lines-end regexControlCharacters
 
 function replaceColorCodes(str: string): string {
 	return str.replace(colorPattern, (_match, code: string) => {
