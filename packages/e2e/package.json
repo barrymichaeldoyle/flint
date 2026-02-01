@@ -14,15 +14,24 @@
 	},
 	"sideEffects": false,
 	"type": "module",
+	"exports": {
+		".": "./package.json"
+	},
+	"files": [
+		"fixtures/",
+		"tests/"
+	],
 	"scripts": {
 		"flint": "flint",
 		"test": "vitest --project e2e"
 	},
 	"devDependencies": {
 		"@flint.fyi/spelling": "workspace:^",
+		"@flint.fyi/ts": "workspace:^",
 		"execa": "9.6.1",
 		"flint": "workspace:^",
-		"vitest": "4.0.15"
+		"vitest": "4.0.18",
+		"vitest-ansi-serializer": "0.1.2"
 	},
 	"engines": {
 		"node": ">=24.0.0"

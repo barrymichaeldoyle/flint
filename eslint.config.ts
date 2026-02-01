@@ -207,6 +207,7 @@ export default defineConfig(
 	},
 	{
 		extends: [packageJson.configs.recommended, packageJson.configs.stylistic],
+		ignores: ["packages/e2e/tests/**/package.json"],
 	},
 	{
 		extends: [packageJson.configs["recommended-publishable"]],

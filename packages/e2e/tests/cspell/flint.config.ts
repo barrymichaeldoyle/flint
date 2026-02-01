@@ -4,7 +4,7 @@ import { defineConfig } from "flint";
 export default defineConfig({
 	use: [
 		{
-			files: "fixtures/**/*.md",
+			files: "fixtures/**",
 			rules: spelling.presets.logical,
 		},
 	],

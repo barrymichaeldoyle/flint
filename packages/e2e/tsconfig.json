@@ -1,10 +1,11 @@
 {
 	"compilerOptions": {
 		"tsBuildInfoFile": "node_modules/.cache/tsbuild/info.test.json",
-		"rootDir": "tests",
+		"rootDir": ".",
 		"outDir": "node_modules/.cache/tsbuild/test",
-		"types": ["node"]
+		"types": ["node"],
+		"moduleResolution": "NodeNext"
 	},
 	"extends": "../../tsconfig.base.json",
-	"include": ["tests"]
+	"include": ["tests", "vitest.setup.ts"]
 }

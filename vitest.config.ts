@@ -11,12 +11,15 @@ export default defineConfig({
 				},
 				test: {
 					clearMocks: true,
-					include: ["**/src/**/*.test.ts", "**/tests/*.test.ts"],
+					include: ["**/src/**/*.test.ts", "**/tests/**/*.test.ts"],
 					name,
 					root: path.join(import.meta.dirname, "packages", name),
 					setupFiles: [
 						"console-fail-test/setup",
 						"@flint.fyi/ts-patch/install-patch-hooks",
+						// knip:ignore-start
+						...(name === "e2e" ? ["./vitest.setup.ts"] : []),
+						// knip:ignore-end
 					],
 					testTimeout: 10_000,
 					typecheck: {

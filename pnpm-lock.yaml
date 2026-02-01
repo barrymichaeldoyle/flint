@@ -249,6 +249,9 @@ importers:
       '@flint.fyi/spelling':
         specifier: workspace:^
         version: link:../spelling
+      '@flint.fyi/ts':
+        specifier: workspace:^
+        version: link:../ts
       execa:
         specifier: 9.6.1
         version: 9.6.1
@@ -258,6 +261,9 @@ importers:
       vitest:
         specifier: 4.0.15
         version: 4.0.15(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2)
+      vitest-ansi-serializer:
+        specifier: 0.1.2
+        version: 0.1.2(vitest@4.0.15(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2))
 
   packages/flint:
     dependencies:
@@ -5202,6 +5208,11 @@ packages:
     peerDependenciesMeta:
       vite:
         optional: true
+
+  vitest-ansi-serializer@0.1.2:
+    resolution: {integrity: sha512-9GHM76QixD3bwEPvbuZXWSJfTZKiTml5WuFxk41MlB/ZrSdsIyePaZoG6kA+xDmQepVbzmW1ozg2s0iSpEOp+Q==}
+    peerDependencies:
+      vitest: ^3.1.1
 
   vitest@4.0.15:
     resolution: {integrity: sha512-n1RxDp8UJm6N0IbJLQo+yzLZ2sQCDyl1o0LeugbPWf8+8Fttp29GghsQBjYJVmWq3gBFfe9Hs1spR44vovn2wA==}
@@ -10567,6 +10578,10 @@ snapshots:
   vitefu@1.1.1(vite@6.4.1(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2)):
     optionalDependencies:
       vite: 6.4.1(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2)
+
+  vitest-ansi-serializer@0.1.2(vitest@4.0.15(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2)):
+    dependencies:
+      vitest: 4.0.15(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2)
 
   vitest@4.0.15(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2):
     dependencies:
