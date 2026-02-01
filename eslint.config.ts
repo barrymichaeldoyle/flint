@@ -188,11 +188,13 @@ export default defineConfig(
 		settings: { vitest: { typecheck: true } },
 	},
 	// E2E tests and configs live next to fixture package.json (no vitest/execa/@flint.fyi/ts); allow packages/e2e devDependencies
+	// E2E runs on Node >=24 (see packages/e2e/package.json engines), so import.meta.dirname is supported
 	{
 		files: ["packages/e2e/tests/**/*.ts"],
 		rules: {
 			"n/no-extraneous-import": "off",
 			"n/no-unpublished-import": "off",
+			"n/no-unsupported-features/node-builtins": "off",
 		},
 	},
 	{
