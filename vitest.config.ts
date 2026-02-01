@@ -17,7 +17,7 @@ export default defineConfig({
 					setupFiles: [
 						"console-fail-test/setup",
 						"@flint.fyi/ts-patch/install-patch-hooks",
-						...(name === "e2e" ? ["./vitest.setup.ts"] : []),
+						...(name === "e2e" ? [import.meta.resolve("./packages/e2e/vitest.setup.ts")] : []),
 					],
 					testTimeout: 10_000,
 					typecheck: {
