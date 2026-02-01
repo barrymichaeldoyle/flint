@@ -18033,7 +18033,8 @@
 		"flint": {
 			"name": "unnecessaryNumericFractions",
 			"plugin": "ts",
-			"preset": "logical"
+			"preset": "stylistic",
+			"status": "implemented"
 		},
 		"oxlint": [
 			{
