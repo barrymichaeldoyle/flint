@@ -3,8 +3,7 @@
 		"tsBuildInfoFile": "node_modules/.cache/tsbuild/info.test.json",
 		"rootDir": ".",
 		"outDir": "node_modules/.cache/tsbuild/test",
-		"types": ["node"],
-		"moduleResolution": "NodeNext"
+		"types": ["node"]
 	},
 	"extends": "../../tsconfig.base.json",
 	"include": ["tests", "vitest.setup.ts"]
