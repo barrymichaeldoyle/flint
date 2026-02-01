@@ -5,7 +5,8 @@ import { describe, expect, it } from "vitest";
 const e2eRoot = path.join(import.meta.dirname, "..");
 
 function normalizeOutput(stdout: string): string {
-	return stdout.replaceAll(e2eRoot, "<cwd>");
+	const normalizedRoot = e2eRoot.replaceAll("\\", "/");
+	return stdout.replaceAll("\\", "/").replaceAll(normalizedRoot, "<cwd>");
 }
 
 describe("cspell", () => {
